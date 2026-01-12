@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+	<title>Datacenter Monitoring</title>
+	<link rel="stylesheet" type="text/css" href="styles/lamp_controller.css">
+</head>
+<body>
+	<div id="header">
+		<table>
+			<tr>
+                <div id="software_name">
+                    Datacenter Monitoring
+                </div>
+                <div id="links_header">
+                    <ul>
+                       <li><a href="main.html">Главная</a></li><!--
+                    --><li><a href="lamp_controller.html">Освещение</a></li><!--
+                    --><li><a href="heater_controller.html">Нагрузка</a></li><!--
+                    --><li><a href="sonoff_sensor_controller.html">Sonoff</a></li><!--
+                    --><li><a href="aqara_sensor_controller.html">Aqara</a></li>
+                    </ul>
+                </div>
+                <div class="toggle_btn">
+                    <img id="imgClickAndChange" src="images/bars-solid.svg" onclick="changeImage()" style="filter: invert(63%) sepia(70%) saturate(9%) hue-rotate(358deg) brightness(91%) contrast(96%); width: 40px;">
+                </div>
+                <div class="dropdown_menu">
+                    <a href="main.html">Главная</a>
+                    <a href="lamp_controller.html">Освещение</a>
+                    <a href="heater_controller.html">Нагрузка</a>
+                    <a href="sonoff_sensor_controller.html">Sonoff</a>
+                    <a href="aqara_sensor_controller.html">Aqara</a>
+                </div>
+			</tr>
+		</table>
+	</div>
+        <section class="main-content">
+            <div class="central"> 
+            <div class="container">
+                        <div class="row">
+                            <div class="supercard">
+                                <div align="center" class='card' >
+                                    <form action="#" class='form'>
+                                        <h2>Ввод номера цвета</h2>
+                                            <div class="options_name" style="width: 350px;">
+                                                <div class="justify-content-around">
+                                                    <strong style="padding-top: 10px; padding-bottom: 10px;">Красный</strong><input  name="colorNumberRed" type="range" min="0" max="255" step="3" oninput="DoSubmit()"><img class="icon" src="images/fill-drip-solid.svg" style="filter: invert(25%) sepia(93%) saturate(6124%) hue-rotate(340deg) brightness(93%) contrast(99%); width: 30px">
+                                                </div>
+                                                <div class="justify-content-around">
+                                                    <strong style="padding-top: 10px; padding-bottom: 10px;">Зеленый</strong><input id="r2" name="colorNumberGreen" type="range" min="0" max="255" step="3"><img class="icon" src="images/fill-drip-solid.svg" style="filter: invert(27%) sepia(90%) saturate(1404%) hue-rotate(92deg) brightness(94%) contrast(108%); width: 30px">
+                                                </div>
+                                                <div class="justify-content-around">
+                                                    <strong style="padding-top: 10px; padding-bottom: 10px;">Синий</strong><input id="r3" name="colorNumberBlue" type="range" min="0" max="255" step="3"><img class="icon" src="images/fill-drip-solid.svg" style="filter: invert(45%) sepia(23%) saturate(5826%) hue-rotate(193deg) brightness(102%) contrast(102%); width: 30px">
+                                                </div>
+                                            </div>
+                                        <p><input class='button' type="submit" value="Выбрать" onclick="DoSubmit()"></p>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="supercard">  
+                                <div align="center" class='card' >
+                                    <form action="#" class='form'>
+                                        <h2>Состояние</h2>
+                                            <div class="options_name">
+                                                <p><input name="condition" type="radio" value="on" > Включить</p>
+                                                <p><input name="condition" type="radio" value="off"> Выключить</p>
+                                            </div>
+                                        <p><input class='button' type="submit" value="Выбрать" ></p>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="supercard">
+                                <div align="center" class='card' >
+                                    <form action="#" class='form'>
+                                        <h2>Выбор режима</h2>
+                                            <div class="options_name">
+                                                <p><input name="mode" type="radio" value="mode1"> Режим #1 <input name="mode" type="radio" value="mode3"> Режим #3</p>
+                                                <p><input name="mode" type="radio" value="mode2"> Режим #2 <input name="mode" type="radio" value="mode4"> Режим #4</p>            
+                                            </div>
+                                        <p><input class='button' type="submit" value="Выбрать"></p>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="supercard">
+                                <div align="center" class='card' >
+                                    <form action="#" class='form'>
+                                        <h2 style="width: 400px;">Яркость и насыщенность</h2>
+                                            <div class="options_name">
+                                                <p>"Яркость" от 1 <input name="brightness" type="range" min="1" max="100" step="1" > 100 %</p>
+                                                <p>"Насыщенность" от 1 <input name="saturation" type="range" min="1" max="100" step="1"> 100 %</p>
+                                                <p>"Температура" от 1700 <input name="temperature" type="range" min="1700" max="6500" step="48"> 6500K</p>
+                                                <p><input name="effect" type="radio" value="smooth"> Мягко <input name="effect" type="radio" value="sudden"> Грубо</p>
+                                            </div>
+                                        <p><input class='button' type="submit" value="Выбрать"></p>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+            </div>
+            </div>
+       </section> 
+    <script type="text/javascript" src="lamp_controller.js"></script>
+</body>
+</html>

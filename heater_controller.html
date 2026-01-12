@@ -1,0 +1,432 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Datacenter Monitoring</title>
+    <link rel="stylesheet" type="text/css" href="styles/heater_controller.css">
+</head>
+<body>
+    <div id="header">
+        <table>
+            <tr>
+                <div id="software_name">
+                    Datacenter Monitoring
+                </div>
+                <div id="links_header">
+                    <ul class="tabs">
+                        <!-- <li><a href="main.html" class="tab">Дашборд</a></li> -->
+                        <li><a href="heater_controller.html" class="tab">Детальный вид</a></li>
+                    </ul>
+                </div>
+                <div class="toggle_btn">
+                    <img id="imgClickAndChange" src="images/bars-solid.svg" onclick="changeImage()" style="filter: invert(63%) sepia(70%) saturate(9%) hue-rotate(358deg) brightness(91%) contrast(96%); width: 40px;" draggable="false">
+                </div>
+                <div class="dropdown_menu">
+                    <a href="main.html">Дашборд</a>
+                    <a href="heater_controller.html">Детальный вид</a>
+                </div>
+            </tr>
+        </table>
+    </div>       
+
+    <div class="overlay" style="display: none;"></div>
+    <div class="choose-options-form">
+        <div style="display: flex; justify-content: space-between;">
+            <div class="article">Выберите опцию</div>
+            <div class="icon-close" onclick="closeChooseOptionsForm()">
+                <img src="images/xmark-solid.svg">
+            </div>
+        </div>
+        <div class="buttons-options">
+            <button type="button" id="add-device-option" onclick="openAddDeviceForm()">
+                <img src="images/add-circle.svg">
+                Добавить устройство
+            </button>
+            <button type="button" id="change-or-delete-option" onclick="openChangeOrDeleteForm()">
+                <img src="images/pen-new-square.svg">
+                Изменить или удалить
+            </button>
+        </div>
+    </div>
+    <div class="add-device-form">
+        <div class="article">Добавить устройство</div>
+        <div class="under-article">Пожалуйста, заполните все поля</div>
+        <div class="scroll-content">
+            <div class="input-form" style="margin: 0 25px 15px 25px;">
+                <p id="device-id-add-p" style="margin-top: 0;">ID устройства</p>
+                <input type="text" id="device-id-add" placeholder="0x0000000000000000">
+            </div>
+            <div class="input-form">
+                <p id="device-name-add-p">Имя устройства</p>
+                <input type="text" id="device-name-add" placeholder="AqaraSensor1">
+            </div>
+            <div class="input-form">
+                <div style="display: flex; justify-content: space-between;">
+                    <p id="location-add-p" style="margin: 0;">Объект нахождения</p>
+                    <button id="new-object-button-add" type="button" onclick="openChooseObjectButtonAdd()">+ Новый объект</button>
+                    <button id="choose-object-button-add" type="button" onclick="openNewObjectButtonAdd()" style="display: none;">Выбрать объект</button>
+                </div>
+                <div class="under-article" style="margin: 0px 25px 15px 0px;">Выберите объект нахождения или добавьте новый</div>
+                <div class="item-list-string-add" style="display: flex;">
+                    <div class="under-article" id="object-string-level1-add" style="margin: 0px 0px 0px 25px;"></div>
+                    <div class="under-article" id="object-string-level2-add" style="margin: 0px 0px 0px 10px;"></div>
+                </div>
+                <ul class="item-list-level1-add"></ul>
+                <ul class="item-list-level2-add"></ul>
+                <div class="input-group-add" style="display: none; justify-content: space-between;">
+                    <div class="input-form" style="margin: 0;">
+                        <p id="object-level1-new-add-p" style="margin-top: 0;">Город и улица</p>
+                        <input type="text" id="object-level1-new-add" placeholder="г. Пермь, ул. Попова, 9">
+                    </div>
+                    <div class="input-form" style="margin: 0;">
+                        <p id="object-level2-new-add-p" style="margin-top: 0;">Помещение</p>
+                        <input type="text" id="object-level2-new-add" placeholder="ЦОД, Зал А">
+                    </div>
+                </div>
+            </div>
+            <div class="input-form">
+                <div class="input-group-add" style="display: flex; justify-content: space-between;">
+                    <div class="input-form" style="margin: 0;">
+                        <p id="device-cor-1-add-p" style="margin-top: 0;">Координата X</p>
+                        <input type="text" id="device-cor-1-add" placeholder="58.012739">
+                    </div>
+                    <div class="input-form" style="margin: 0;">
+                        <p id="device-cor-2-add-p" style="margin-top: 0;">Координата Y</p>
+                        <input type="text" id="device-cor-2-add" placeholder="56.223514">
+                    </div>
+                </div>
+            </div>
+            <div class="input-form" style="margin: 15px 25px 0 25px;">
+                <p id="image-grid-add-p">Тип устройства</p>
+                <div class="image-grid-add">
+                    <div class="image-box-add" value="1">
+                        <img src="images/aqara-sensor.png">
+                        <div class="image-article">AqaraSensor</div>
+                    </div>
+                    <div class="image-box-add" value="2">
+                        <img src="images/sonoff-sensor.png">
+                        <div class="image-article">SonoffSensor</div>
+                    </div>
+                    <div class="image-box-add" value="3">
+                        <img src="images/smart-plug.png">
+                        <div class="image-article">SmartPlug</div>
+                    </div>
+                    <div class="image-box-add" value="4">
+                        <img src="images/aqara-water-leak-sensor.png">
+                        <div class="image-article">AqaraWaterLeakSensor</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="buttons-form">
+            <button type="button" onclick="closeAddDeviceForm()">< Назад</button>
+            <button type="submit" id="add-device-button">Добавить</button>
+        </div>
+    </div>
+    <div class="change-or-delete-form">
+        <div class="article">Изменить или удалить устройство</div>
+        <p id="location-p">Объекты нахождения</p>
+        <div class="under-article">Выберите объект нахождения и устройство</div>
+        <div class="object-list"></div>
+        <!--
+        <div class="message" style="margin-top: 20px; display: flex; flex-direction: column; align-items: center; justify-content: center;">
+            <img src="images/repair.svg" style="height: 60px; margin-top: 20px;">
+            <div class="article">Технические работы</div>
+            <p style="margin: 0px 25px 15px 25px; font-size: 16px; font-family: monospace; font-weight: 400; color: rgba(0, 0, 0, .5);">Просьба, оставаться на своих местах</p>
+        </div>
+        -->
+
+        <button type="button" onclick="closeChangeOrDeleteForm()">< Назад</button>
+    </div>
+    <div id="change-or-delete-message">
+        <div style="display: flex; justify-content: space-between;">
+            <div class="article"></div>
+            <div class="icon-close" onclick="closeChangeOrDeleteMessage()">
+                <img src="images/xmark-solid.svg">
+            </div>
+        </div>
+        <div class="buttons-options">
+            <button type="button" id="change-device-option" onclick="openChangeDeviceForm()">
+                <img src="images/pen-new-square-white.svg">
+                Изменить
+            </button>
+            <button type="button" id="delete-option" onclick="deleteDevice()">
+                <img src="images/trash-xmark.svg">
+                Удалить
+            </button>
+        </div>
+    </div>
+    <div id="success-message">
+        <img src="images/check-circle.svg">
+        <div class="article">Устройство успешно добавлено!</div>
+        <div class="buttons-form">
+            <button type="button" onclick="closeSuccessMessage()">Закрыть</button>
+            <button type="submit" onclick="successMessageAddDevice()">Добавить еще</button>
+        </div>
+    </div>
+    <div class="change-device-form" style="z-index: 10;">
+        <div class="article">Изменить устройство</div>
+        <div class="under-article">Пожалуйста, заполните все поля</div>
+        <div class="scroll-content">
+            <div class="input-form" style="margin: 0 25px 15px 25px;">
+                <p id="device-id-change-p" style="margin-top: 0;">ID устройства</p>
+                <input type="text" id="device-id-change" placeholder="0x0000000000000000">
+            </div>
+            <div class="input-form">
+                <p id="device-name-change-p">Имя устройства</p>
+                <input type="text" id="device-name-change" placeholder="AqaraSensor1">
+            </div>
+            <div class="input-form">
+                <div style="display: flex; justify-content: space-between;">
+                    <p id="location-change-p" style="margin: 0;">Объект нахождения</p>
+                    <button id="new-object-button-change" type="button" onclick="openChooseObjectButtonChange()">+ Новый объект</button>
+                    <button id="choose-object-button-change" type="button" onclick="openNewObjectButtonChange()" style="display: none;">Выбрать объект</button>
+                </div>
+                <div class="under-article" style="margin: 0px 25px 15px 0px;">Выберите объект нахождения или добавьте новый</div>
+                <div class="item-list-string-change" style="display: flex;">
+                    <div class="under-article" id="object-string-level1-change" style="margin: 0px 0px 0px 25px;"></div>
+                    <div class="under-article" id="object-string-level2-change" style="margin: 0px 0px 0px 10px;"></div>
+                </div>
+                <ul class="item-list-level1-change"></ul>
+                <ul class="item-list-level2-change"></ul>
+                <div class="input-group-change" style="display: none; justify-content: space-between;">
+                    <div class="input-form" style="margin: 0;">
+                        <p id="object-level2-new-change-p" style="margin-top: 0;">Город и улица</p>
+                        <input type="text" id="object-level1-new-change" placeholder="г. Пермь, ул. Попова, 9">
+                    </div>
+                    <div class="input-form" style="margin: 0;">
+                        <p id="object-level2-new-change-p" style="margin-top: 0;">Помещение</p>
+                        <input type="text" id="object-level2-new-change" placeholder="ЦОД, Зал А">
+                    </div>
+                </div>
+            </div>
+            <div class="input-form">
+                <div class="input-group-change" style="display: flex; justify-content: space-between;">
+                    <div class="input-form" style="margin: 0;">
+                        <p id="device-cor-1-change-p" style="margin-top: 0;">Координата X</p>
+                        <input type="text" id="device-cor-1-change" placeholder="58.012739">
+                    </div>
+                    <div class="input-form" style="margin: 0;">
+                        <p id="device-cor-2-change-p" style="margin-top: 0;">Координата Y</p>
+                        <input type="text" id="device-cor-2-change" placeholder="56.223514">
+                    </div>
+                </div>
+            </div>
+            <div class="input-form" style="margin: 15px 25px 0 25px;">
+                <p id="image-grid-change-p">Тип устройства</p>
+                <div class="image-grid-change">
+                    <div class="image-box-change" value="1">
+                        <img src="images/aqara-sensor.png">
+                        <div class="image-article">AqaraSensor</div>
+                    </div>
+                    <div class="image-box-change" value="2">
+                        <img src="images/sonoff-sensor.png">
+                        <div class="image-article">SonoffSensor</div>
+                    </div>
+                    <div class="image-box-change" value="3">
+                        <img src="images/smart-plug.png">
+                        <div class="image-article">SmartPlug</div>
+                    </div>
+                    <div class="image-box-change" value="4">
+                        <img src="images/aqara-water-leak-sensor.png">
+                        <div class="image-article">AqaraWaterLeakSensor</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="buttons-form">
+            <button type="button" onclick="closeChangeDeviceForm()">< Назад</button>
+            <button type="submit" id="change-device-button" onclick="changeDeviceForm()">Изменить</button>
+        </div>
+    </div>
+    <div id="success-message-change-device">
+        <img src="images/check-circle.svg">
+        <div class="article">Устройство успешно изменено!</div>
+        <div class="buttons-form">
+            <button type="button" onclick="closeSuccessMessageChange()" style="width: 45%;">Закрыть</button>
+        </div>
+    </div>
+    <div id="success-message-delete-device">
+        <img src="images/trash-xmark-red.svg">
+        <div class="article">Устройство успешно удалено!</div>
+        <div class="buttons-form">
+            <button type="button" onclick="closeSuccessMessageDelete()" style="width: 45%;">Закрыть</button>
+        </div>
+    </div>
+
+
+    <div class="main">
+        <div class="card">
+            <div class="row">
+                <div class="grid" style="display: flex;">   
+                <form class="form">
+                    <!-- <legend style="font-size: 31px; width: 315px;">Время:</legend>
+                        <div class="content-between">
+                            <div class="buttons">
+                                <div>
+                                <input type="radio" id="day" name="drone" value="day"/>
+                                <label for="day">День</label>
+                                </div>
+                                <div>
+                                <input type="radio" id="week" name="drone" value="week"/>
+                                <label for="week">Неделя</label>
+                                </div>
+                                <div>
+                                <input type="radio" id="month" name="drone" value="month"/>
+                                <label for="month">Месяц</label>
+                                </div>
+                                <div>
+                                <input type="radio" id="all" name="drone" value="all"/>
+                                <label for="all">За все время</label>
+                                </div>
+                            </div>
+                            <img class="bdsm"src="images/calendar.png" style="height: 45px;" draggable="false">
+                        </div> -->
+                    <!--<div class="submitForm">
+                        <button class="refresh" onclick="readFile()">Обновить данные</button>
+                        <button class="arrow">></button>
+                    </div>-->
+                    <div class="buttons-table-refresh" style="padding-right: 10px;">
+                        <input type="button" onclick="readFileWrapper()" value="Обновить данные">
+                        <!-- onclick="location.href='aqara_sensor_controller.html';" -->
+                        <input id="table-view-button" type="button" onclick="tableView()" value="Табличный вид">
+                        <input id="detailed-view-button" type="button" onclick="detailedView()" value="Детальный вид" style="display: none;">
+                    </div>
+                </form>
+                <!-- <img style="width: 329px; height: 289px; border-radius: 8px;" src="C:\Users\BerestovSM.RTK-INFORM\Desktop\jason-statham-wallpaper.jpg"> -->
+                <div class="location-form" style="display: none;">
+                    <h3 class="main-location" style="text-align: center; font-size: 30px; font-weight: normal; margin-top: 0px; margin-bottom: 10px;">ЦОД</h3>
+                    <div class="vertical-menu" id="buttons-group-1">
+                        <button type="button" class="button3 active">ЦОД</button>
+                        <button type="button" class="button4">305-ая</button>
+                        <button type="button" class="button5">Серверная тит. 85-01</button>
+                        <button type="button" class="button6">ЛАЗ (Цех связи)</button>
+                    </div>
+
+                    <div class="big-column">
+                    
+                    <div class="column">
+                        <h3 class="sub-location" style="margin: 0; margin-left: 10px;">Локация</h3>
+                        <div class="vertical-menu" id="buttons-group-2">
+                            <button class="location-1 active" type="button">Зал А</button>
+                            <button class="location-2" type="button">Зал Б</button>
+                            <button class="location-3" type="button">Зал В</button>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <h3 class="sub-location" style="margin: 0; margin-left: 10px;">Датчики</h3>
+                        <div class="vertical-menu" id="buttons-group-3">
+                            <button class="active" type="button">Датчик 1</button>
+                            <button type="button">Датчик 2</button>
+                        </div>
+                    </div>
+                    </div> 
+                </div>
+                <div style="display: block;">
+                    <div style="justify-content: space-between; display: flex;">
+                        <legend style="font-size: 31px;">Объекты:</legend>
+                        <!-- <button id="settings-button" onclick="openChooseOptionsForm()">
+                            <img src="images/settings.svg">
+                            Изменить
+                        </button> -->
+                    </div>
+                    <div class="location-tree"></div>
+                </div>
+                </div>
+                <div class="grid"> 
+                <div class="cards"></div>
+                <!-- <div class="cards" id="type_id_4">
+                    <div class="minicard">
+                        <div align="space-between" class='card_state' >
+                            <form name="data-property" action="#" type="submit" value="property_22" class='form_state'>
+                                <div class="options_name_state">
+                                    <div class="justify-content-between">
+                                        <div class="justify-content-start">
+                                            <strong class="options_value">0</strong>
+                                            <small class="text-muted" style="font-size: 20px;"></small>
+                                        </div>
+                                        <img class="icon" src="images/droplet-solid.svg" style="filter: invert(62%) sepia(16%) saturate(839%) hue-rotate(133deg) brightness(89%) contrast(91%); height: 45px" draggable="false">
+                                    </div> 
+                                    <div>Утечка воды</div>
+                                    <div class="dotted_line" style="border-top: 5px dotted darkcyan;"></div>
+                                    <div class="justify-content-between">
+                                        <div class="flex-shrink-1 flex-grow-1" style="display: none;">Вкл.</div>
+                                        <label class="switch" style="display: none;">
+                                            <input type="checkbox">
+                                            <span class="slider round"></span>
+                                         </label>
+                                    </div>      
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="minicard">
+                        <div align="space-between" class='card_state' >
+                            <form name="data-property" action="#" type="submit" value="property_20" class='form_state'>
+                                <div class="options_name_state">
+                                    <div class="justify-content-between">
+                                        <div class="justify-content-start">
+                                            <strong class="options_value">0</strong>
+                                            <small class="text-muted" style="font-size: 20px;">lqi</small>
+                                        </div>
+                                        <img class="icon" src="images/tower-broadcast-solid.svg" style="filter: invert(64%) sepia(20%) saturate(6808%) hue-rotate(194deg) brightness(97%) contrast(91%); height: 45px" draggable="false">
+                                    </div> 
+                                    <div>Уровень сигнала</div>
+                                    <div class="dotted_line" style="border-top: 5px dotted cornflowerblue;"></div>        
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="minicard">
+                        <div align="space-between" class='card_state'>
+                            <form name="data-property" action="#" type="submit" value="property_19" class='form_state'>
+                                <div class="options_name_state">
+                                    <div class="justify-content-between">
+                                        <div class="justify-content-start">
+                                            <strong class="options_value">0</strong>
+                                            <small class="text-muted" style="font-size: 20px;"></small>
+                                        </div>
+                                        <img class="icon" src="images/battery-full-solid.svg" style="filter: invert(25%) sepia(79%) saturate(2677%) hue-rotate(93deg) brightness(100%) contrast(73%); height: 45px" draggable="false">
+                                    </div> 
+                                    <div class="flex-shrink-1 flex-grow-1">Батарея разряжена</div>
+                                    <div class="dotted_line" style="border-top: 5px dotted forestgreen;"></div>       
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div> -->
+                </div>
+            </div>  
+            <!-- <form class="calendar">
+                <input type="date" name="day" disabled>
+                <input type="week" name="week" disabled>
+                <input type="month" name="month" disabled style="margin-right: 10px;">
+            </form> -->
+            <div id="chart_div">
+                <img src="images/doc8.svg" draggable="false">
+            </div>
+            <table class="sensors-table" style="display: none;">
+                <thead>
+                    <tr>
+                      <th>Название датчика</th>
+                      <th style="width: 138px;">Локация</th>
+                      <th>Батарея</th>
+                      <th>Уровень сигнала</th>
+                      <th>Кол-во отключений</th>
+                      <th>Давление</th>
+                      <th>Температура</th>
+                      <th>Напряжение</th>
+                      <th>Влажность</th>
+                      <th>Дата/Время</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="heater_controller.js" charset="UTF-8"></script>
+</body>
+</html>

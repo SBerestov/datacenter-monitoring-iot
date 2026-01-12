@@ -1,0 +1,3 @@
+{"battery":100,"humidity":35.45,"linkquality":93,"power_outage_count":4,"pressure":993.9,"temperature":23.2,"voltage":3005}
+{"battery":100,"humidity":35.53,"linkquality":93,"power_outage_count":4,"pressure":993.9,"temperature":23.2,"voltage":3005}
+{"battery":100,"humidity":35.53,"linkquality":93,"power_outage_count":4,"pressure":993.3,"temperature":23.2,"voltage":3005}

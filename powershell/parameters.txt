@@ -1,0 +1,1211 @@
+Получен type_id: 2
+Получено propertyName: property_4
+Получен type_id: 2
+Получено propertyName: property_3
+Получен type_id: 2
+Получено propertyName: property_5
+Получен type_id: 2
+Получено propertyName: property_6
+Получен type_id: 2
+Получено propertyName: property_7
+Получен type_id: 2
+Получено propertyName: property_1
+Получен type_id: 2
+Получено propertyName: property_2
+Получен type_id: 1
+Получено propertyName: property_2
+Получен type_id: 1
+Получено propertyName: property_1
+Получен type_id: 1
+Получено propertyName: property_7
+Получен type_id: 1
+Получено propertyName: property_6
+Получен type_id: 1
+Получено propertyName: property_5
+Получен type_id: 1
+Получено propertyName: property_4
+Получен type_id: 1
+Получено propertyName: property_3
+Получен type_id: 1
+Получено propertyName: property_2
+Получен type_id: 1
+Получено propertyName: property_3
+Получен type_id: 1
+Получено propertyName: property_2
+Получен type_id: 1
+Получено propertyName: property_3
+Получен type_id: 1
+Получено propertyName: property_2
+Получен type_id: 1
+Получено propertyName: property_3
+Получен type_id: 1
+Получено propertyName: property_2
+Получен type_id: 1
+Получено propertyName: property_6
+Получен type_id: 1
+Получено propertyName: property_6
+Получен type_id: 1
+Получено propertyName: property_7
+Получен type_id: 1
+Получено propertyName: property_6
+Получен type_id: 1
+Получено propertyName: property_7
+Получен type_id: 1
+Получено propertyName: property_6
+Получен type_id: 1
+Получено propertyName: property_3
+Получен type_id: 1
+Получено propertyName: property_2
+Получен type_id: 1
+Получено propertyName: property_3
+Получен type_id: 1
+Получено propertyName: property_2
+Получен type_id: 1
+Получено propertyName: property_2
+Получен type_id: 1
+Получено propertyName: property_3
+Получен type_id: 1
+Получено propertyName: property_2
+Получен type_id: 1
+Получено propertyName: property_3
+Получен type_id: 1
+Получено propertyName: property_2
+Получен type_id: 1
+Получено propertyName: property_3
+Получен type_id: 1
+Получено propertyName: property_5
+Получен type_id: 1
+Получено propertyName: property_6
+Получен type_id: 1
+Получено propertyName: property_3
+Получен type_id: 1
+Получено propertyName: property_2
+Получен type_id: 1
+Получено propertyName: property_3
+Получен type_id: 1
+Получено propertyName: property_5
+Получен type_id: 1
+Получено propertyName: property_7
+Получен type_id: 1
+Получено propertyName: property_4
+Получен type_id: 1
+Получено propertyName: property_2
+Получен type_id: 1
+Получено propertyName: property_2
+Получено datetimeValue: week=2023-W30
+Получен type_id: 1
+Получено propertyName: property_1
+Получено datetimeValue: day=2023-08-17
+Получен type_id: 1
+Получено propertyName: property_2
+Получено datetimeValue: day=2023-08-17
+Получен type_id: 1
+Получено propertyName: property_1
+Получено datetimeValue: day=2023-08-17
+Получен type_id: 1
+Получено propertyName: property_2
+Получено datetimeValue: day=2024-02-01
+Получен type_id: 1
+Получено propertyName: property_2
+Получено datetimeValue: day=2024-02-01
+Получен type_id: 1
+Получено propertyName: property_2
+Получено datetimeValue: day=2024-02-01
+Получен type_id: 1
+Получено propertyName: property_2
+Получено datetimeValue: day=2024-02-22
+Получен type_id: 1
+Получено propertyName: property_2
+Получено datetimeValue: day=2024-02-22
+Получен type_id: 1
+Получено propertyName: property_2
+Получено datetimeValue: 
+Получен type_id: 1
+Получено propertyName: property_2
+Получено datetimeValue: day=2023-10-12
+Получен type_id: 1
+Получено propertyName: property_2
+Получено datetimeValue: day=2023-10-12
+Получен type_id: 1
+Получено propertyName: property_2
+Получено datetimeValue: day=2023-10-12
+Получен type_id: 1
+Получено propertyName: property_3
+Получено datetimeValue: 
+Получен type_id: 1
+Получено propertyName: property_2
+Получено datetimeValue: 
+Получен type_id: 1
+Получено propertyName: property_3
+Получено datetimeValue: 
+Получен type_id: 1
+Получено propertyName: property_3
+Получено datetimeValue: month=2023-07
+Получен type_id: 1
+Получено propertyName: property_2
+Получено datetimeValue: month=2023-07
+Получен type_id: 1
+Получено propertyName: property_3
+Получено datetimeValue: month=2023-07
+Получен type_id: 1
+Получено propertyName: property_5
+Получено datetimeValue: month=2023-07
+Получен type_id: 1
+Получено propertyName: property_2
+Получено datetimeValue: month=2023-07
+Получен type_id: 1
+Получено propertyName: property_2
+Получено datetimeValue: month=2023-07
+Получен type_id: 1
+Получено propertyName: property_3
+Получено datetimeValue: 
+Получен type_id: 1
+Получено propertyName: property_2
+Получено datetimeValue: 
+Получен type_id: 1
+Получено propertyName: property_2
+Получено datetimeValue: month=2024-02
+Получен type_id: 1
+Получено propertyName: property_2
+Получено datetimeValue: 
+Получен type_id: 1
+Получено propertyName: property_2
+Получено datetimeValue: week=2023-W30
+Получен type_id: 1
+Получено propertyName: property_2
+Получено datetimeValue: week=2023-W30
+Получен type_id: 1
+Получено propertyName: property_2
+Получено datetimeValue: 
+Получен type_id: 1
+Получено propertyName: property_2
+Получено datetimeValue: month=2023-08
+Получен type_id: 1
+Получено propertyName: property_3
+Получено datetimeValue: 
+Получен type_id: 1
+Получено propertyName: property_2
+Получено datetimeValue: 
+Получен type_id: 1
+Получено propertyName: property_3
+Получено datetimeValue: week=2023-W30
+Получен type_id: 1
+Получено propertyName: property_3
+Получено datetimeValue: 
+Получен type_id: 1
+Получено propertyName: property_3
+Получено datetimeValue: month=2023-08
+Получен type_id: 1
+Получено propertyName: property_2
+Получено datetimeValue: 
+Получен type_id: 1
+Получено propertyName: property_2
+Получено datetimeValue: month=2023-08
+Получен type_id: 1
+Получено propertyName: property_3
+Получено datetimeValue: 
+Получен type_id: 1
+Получено propertyName: property_2
+Получено datetimeValue: 
+Получен type_id: 1
+Получено propertyName: property_3
+Получено datetimeValue: 
+Получен type_id: 1
+Получено propertyName: property_2
+Получено datetimeValue: 
+Получен type_id: 1
+Получено propertyName: property_3
+Получено datetimeValue: 
+Получен type_id: 1
+Получено propertyName: property_2
+Получено datetimeValue: 
+Получен type_id: 1
+Получено propertyName: property_3
+Получено datetimeValue: 
+Получен type_id: 1
+Получено propertyName: property_2
+Получено datetimeValue: 
+Получен type_id: 1
+Получено propertyName: property_3
+Получено datetimeValue: 
+Получен type_id: 1
+Получено propertyName: property_2
+Получено datetimeValue: month=2023-08
+Получен type_id: 1
+Получено propertyName: property_3
+Получено datetimeValue: 
+Получен type_id: 1
+Получено propertyName: property_6
+Получено datetimeValue: 
+Получен type_id: 1
+Получено propertyName: property_2
+Получено datetimeValue: 
+Получен type_id: 1
+Получено propertyName: property_3
+Получено datetimeValue: month=2023-08
+Получен type_id: 1
+Получено propertyName: property_2
+Получено datetimeValue: 
+Получен type_id: 1
+Получено propertyName: property_3
+Получено datetimeValue: 
+Получен type_id: 1
+Получено propertyName: property_6
+Получено datetimeValue: 
+Получен type_id: 1
+Получено propertyName: property_3
+Получено datetimeValue: 
+Получен type_id: 1
+Получено propertyName: property_2
+Получено datetimeValue: 
+Получен type_id: 1
+Получено propertyName: property_3
+Получено datetimeValue: 
+Получен type_id: 1
+Получено propertyName: property_2
+Получено datetimeValue: 
+Получен type_id: 1
+Получено propertyName: property_3
+Получено datetimeValue: 
+Получен type_id: 1
+Получено propertyName: property_7
+Получено datetimeValue: 
+Получен type_id: 1
+Получено propertyName: property_1
+Получено datetimeValue: 
+Получен type_id: 1
+Получено propertyName: property_5
+Получено datetimeValue: 
+Получен type_id: 1
+Получено propertyName: property_2
+Получено datetimeValue: 
+Получен type_id: 1
+Получено propertyName: property_3
+Получено datetimeValue: 
+Получен type_id: 1
+Получено propertyName: property_6
+Получено datetimeValue: 
+Получен type_id: 1
+Получено propertyName: property_7
+Получено datetimeValue: 
+Получен type_id: 1
+Получено propertyName: property_1
+Получено datetimeValue: 
+Получен type_id: 1
+Получено propertyName: property_5
+Получено datetimeValue: 
+Получен type_id: 1
+Получено propertyName: property_2
+Получено datetimeValue: 
+Получен type_id: 1
+Получено propertyName: property_3
+Получено datetimeValue: 
+Получен type_id: 1
+Получено propertyName: property_6
+Получено datetimeValue: 
+Получен type_id: 1
+Получено propertyName: property_7
+Получено datetimeValue: 
+Получен type_id: 1
+Получено propertyName: property_2
+Получено datetimeValue: 
+Получен type_id: 1
+Получено propertyName: property_2
+Получено datetimeValue: 
+Получен type_id: 1
+Получено propertyName: property_3
+Получено datetimeValue: 
+Получен type_id: 1
+Получено propertyName: property_6
+Получено datetimeValue: 
+Получен type_id: 1
+Получено propertyName: property_2
+Получено datetimeValue: 
+Получен type_id: 1
+Получено propertyName: property_2
+Получено datetimeValue: month=2024-03
+Получен type_id: 1
+Получено propertyName: property_2
+Получено datetimeValue: month=2024-04
+Получен type_id: 1
+Получено propertyName: property_2
+Получено datetimeValue: month=2024-02
+Получен type_id: 1
+Получено propertyName: property_2
+Получено datetimeValue: month=2024-01
+Получен type_id: 1
+Получено propertyName: property_2
+Получено datetimeValue: 
+Получен type_id: 1
+Получено propertyName: property_2
+Получено datetimeValue: 
+Получен type_id: 1
+Получено propertyName: property_2
+Получено datetimeValue: 
+Получен type_id: 1
+Получено propertyName: property_2
+Получено datetimeValue: 
+Получен type_id: 1
+Получено propertyName: property_3
+Получено datetimeValue: 
+Получен type_id: 1
+Получено propertyName: property_2
+Получено datetimeValue: month=2024-03
+Получен type_id: 1
+Получено propertyName: property_3
+Получено datetimeValue: month=2024-02
+Получен type_id: 1
+Получено propertyName: property_2
+Получено datetimeValue: 
+Получен type_id: 1
+Получено propertyName: property_3
+Получено datetimeValue: 
+Получен type_id: 1
+Получено propertyName: property_7
+Получено datetimeValue: 
+Получен type_id: 1
+Получено propertyName: property_3
+Получено datetimeValue: 
+Получен type_id: 1
+Получено propertyName: property_2
+Получено datetimeValue: week=2024-W13
+Получен type_id: 1
+Получено propertyName: property_2
+Получено datetimeValue: 
+Получен type_id: 1
+Получено propertyName: property_2
+Получено datetimeValue: month=2024-03
+Получен type_id: 1
+Получено propertyName: property_2
+Получено datetimeValue: 
+Получен type_id: 1
+Получено propertyName: property_2
+Получено datetimeValue: month=2024-03
+Получен type_id: 1
+Получено propertyName: property_2
+Получено datetimeValue: 
+Получен type_id: 1
+Получено propertyName: property_2
+Получено datetimeValue: month=2024-03
+Получен type_id: 1
+Получено propertyName: property_4
+Получено datetimeValue: month=2024-03
+Получен type_id: 1
+Получено propertyName: property_2
+Получено datetimeValue: 
+Получен type_id: 1
+Получено propertyName: property_4
+Получено datetimeValue: 
+Получен type_id: 1
+Получено propertyName: property_3
+Получено datetimeValue: month=2024-03
+Получен type_id: 1
+Получено propertyName: property_3
+Получено datetimeValue: 
+Получен type_id: 1
+Получено propertyName: property_3
+Получено datetimeValue: month=2024-03
+Получен type_id: 1
+Получено propertyName: property_3
+Получено datetimeValue: 
+Получен type_id: 1
+Получено propertyName: property_5
+Получено datetimeValue: 
+Получен type_id: 1
+Получено propertyName: property_5
+Получено datetimeValue: month=2024-03
+Получен type_id: 1
+Получено propertyName: property_3
+Получено datetimeValue: 
+Получен type_id: 1
+Получено propertyName: property_2
+Получено datetimeValue: 
+Получен type_id: 1
+Получено propertyName: property_3
+Получено datetimeValue: 
+Получен type_id: 1
+Получено propertyName: property_5
+Получено datetimeValue: 
+Получен type_id: 1
+Получено propertyName: property_6
+Получено datetimeValue: month=2024-03
+Получен type_id: 1
+Получено propertyName: property_6
+Получено datetimeValue: month=2024-03
+Получен type_id: 1
+Получено propertyName: property_6
+Получено datetimeValue: 
+Получен type_id: 1
+Получено propertyName: property_2
+Получено datetimeValue: 
+Получен type_id: 1
+Получено propertyName: property_3
+Получено datetimeValue: 
+Получен type_id: 1
+Получено propertyName: property_5
+Получено datetimeValue: 
+Получен type_id: 1
+Получено propertyName: property_6
+Получено datetimeValue: month=2024-03
+Получен type_id: 1
+Получено propertyName: property_6
+Получено datetimeValue: 
+Получен type_id: 1
+Получено propertyName: property_6
+Получено datetimeValue: month=2024-03
+Получен type_id: 1
+Получено propertyName: property_6
+Получено datetimeValue: 
+Получен type_id: 1
+Получено propertyName: property_6
+Получено datetimeValue: month=2024-03
+Получен type_id: 1
+Получено propertyName: property_6
+Получено datetimeValue: 
+Получен type_id: 1
+Получено propertyName: property_6
+Получено datetimeValue: month=2024-03
+Получен type_id: 1
+Получено propertyName: property_6
+Получено datetimeValue: 
+Получен type_id: 1
+Получено propertyName: property_2
+Получено datetimeValue: 
+Получен type_id: 1
+Получено propertyName: property_6
+Получено datetimeValue: month=2024-03
+Получен type_id: 1
+Получено propertyName: property_6
+Получено datetimeValue: month=2024-03
+Получен type_id: 1
+Получено propertyName: property_5
+Получено datetimeValue: month=2024-03
+Получен type_id: 1
+Получено propertyName: property_7
+Получено datetimeValue: month=2024-03
+Получен type_id: 1
+Получено propertyName: property_2
+Получено datetimeValue: month=2024-03
+Получен type_id: 1
+Получено propertyName: property_3
+Получено datetimeValue: month=2024-03
+Получен type_id: 1
+Получено propertyName: property_2
+Получено datetimeValue: month=2024-03
+Получен type_id: 1
+Получено propertyName: property_3
+Получено datetimeValue: month=2024-03
+Получен type_id: 1
+Получено propertyName: property_3
+Получено datetimeValue: month=2024-03
+Получен type_id: 1
+Получено propertyName: property_6
+Получено datetimeValue: month=2024-02
+Получен type_id: 1
+Получено propertyName: property_6
+Получено datetimeValue: month=2024-02
+Получен type_id: 1
+Получено propertyName: property_6
+Получено datetimeValue: 
+Получен type_id: 1
+Получено propertyName: property_3
+Получено datetimeValue: 
+Получен type_id: 1
+Получено propertyName: property_3
+Получено datetimeValue: month=2024-03
+Получен type_id: 1
+Получено propertyName: property_2
+Получено datetimeValue: 
+Получен type_id: 1
+Получено propertyName: property_2
+Получено datetimeValue: month=2024-02
+Получен type_id: 1
+Получено propertyName: property_2
+Получено datetimeValue: 
+Получен type_id: 1
+Получено propertyName: property_2
+Получено datetimeValue: month=2024-03
+Получен type_id: 1
+Получено propertyName: property_2
+Получено datetimeValue: 
+Получен type_id: 1
+Получено propertyName: property_2
+Получено datetimeValue: month=2024-03
+Получен type_id: 1
+Получено propertyName: property_3
+Получено datetimeValue: 
+Получен type_id: 1
+Получено propertyName: property_3
+Получено datetimeValue: 
+Получен type_id: 1
+Получено propertyName: property_3
+Получено datetimeValue: 
+Получен type_id: 1
+Получено propertyName: property_3
+Получено datetimeValue: 
+Получен type_id: 1
+Получено propertyName: property_2
+Получено datetimeValue: 
+Получен type_id: 1
+Получено propertyName: property_2
+Получено datetimeValue: 
+Получен type_id: 1
+Получено propertyName: property_6
+Получено datetimeValue: 
+Получен type_id: 1
+Получено propertyName: property_6
+Получено datetimeValue: 
+Получен type_id: 1
+Получено propertyName: property_6
+Получено datetimeValue: 
+Получен type_id: 1
+Получено propertyName: property_6
+Получено datetimeValue: month=2024-03
+Получен type_id: 1
+Получено propertyName: property_6
+Получено datetimeValue: 
+Получен type_id: 1
+Получено propertyName: property_6
+Получено datetimeValue: month=2024-03
+Получен type_id: 1
+Получено propertyName: property_6
+Получено datetimeValue: 
+Получен type_id: 1
+Получено propertyName: property_2
+Получено datetimeValue: 
+Получен type_id: 1
+Получено propertyName: property_3
+Получено datetimeValue: 
+Получен type_id: 1
+Получено propertyName: property_5
+Получено datetimeValue: 
+Получен type_id: 1
+Получено propertyName: property_6
+Получено datetimeValue: 
+Получен type_id: 1
+Получено propertyName: property_6
+Получено datetimeValue: 
+Получен type_id: 1
+Получено propertyName: property_4
+Получено datetimeValue: 
+Получен type_id: 1
+Получено propertyName: property_3
+Получено datetimeValue: 
+Получен type_id: 1
+Получено propertyName: property_2
+Получено datetimeValue: 
+Получен type_id: 1
+Получено propertyName: property_6
+Получено datetimeValue: 
+Получен type_id: 1
+Получено propertyName: property_6
+Получено datetimeValue: 
+Получен type_id: 1
+Получено propertyName: property_7
+Получено datetimeValue: 
+Получен type_id: 1
+Получено propertyName: property_6
+Получено datetimeValue: month=2024-03
+Получен type_id: 1
+Получено propertyName: property_6
+Получено datetimeValue: month=2024-03
+Получен type_id: 1
+Получено propertyName: property_6
+Получено datetimeValue: 
+Получен type_id: 1
+Получено propertyName: property_6
+Получено datetimeValue: month=2024-03
+Получен type_id: 1
+Получено propertyName: property_6
+Получено datetimeValue: 
+Получен type_id: 1
+Получено propertyName: property_5
+Получено datetimeValue: 
+Получен type_id: 1
+Получено propertyName: property_6
+Получено datetimeValue: month=2024-03
+Получен type_id: 1
+Получено propertyName: property_6
+Получено datetimeValue: month=2024-03
+Получен type_id: 1
+Получено propertyName: property_5
+Получено datetimeValue: 
+Получен type_id: 1
+Получено propertyName: property_6
+Получено datetimeValue: 
+Получен type_id: 1
+Получено propertyName: property_6
+Получено datetimeValue: 
+Получен type_id: 1
+Получено propertyName: property_5
+Получено datetimeValue: 
+Получен type_id: 1
+Получено propertyName: property_6
+Получено datetimeValue: 
+Получен type_id: 1
+Получено propertyName: property_6
+Получено datetimeValue: 
+Получен type_id: 1
+Получено propertyName: property_5
+Получено datetimeValue: month=2024-03
+Получен type_id: 1
+Получено propertyName: property_6
+Получено datetimeValue: month=2024-03
+Получен type_id: 1
+Получено propertyName: property_6
+Получено datetimeValue: month=2024-03
+Получен type_id: 1
+Получено propertyName: property_5
+Получено datetimeValue: 
+Получен type_id: 1
+Получено propertyName: property_5
+Получено datetimeValue: 
+Получен type_id: 1
+Получено propertyName: property_6
+Получено datetimeValue: 
+Получен type_id: 1
+Получено propertyName: property_3
+Получено datetimeValue: 
+Получен type_id: 1
+Получено propertyName: property_6
+Получено datetimeValue: 
+Получен type_id: 1
+Получено propertyName: property_6
+Получено datetimeValue: month=2024-03
+Получен type_id: 1
+Получено propertyName: property_5
+Получено datetimeValue: 
+Получен type_id: 1
+Получено propertyName: property_5
+Получено datetimeValue: month=2024-03
+Получен type_id: 1
+Получено propertyName: property_5
+Получено datetimeValue: 
+Получен type_id: 1
+Получено propertyName: property_5
+Получено datetimeValue: date=2024-04-01
+Получен type_id: 1
+Получено propertyName: property_5
+Получено datetimeValue: month=2024-03
+Получен type_id: 1
+Получено propertyName: property_5
+Получено datetimeValue: week=2024-W13
+Получен type_id: 1
+Получено propertyName: property_5
+Получено datetimeValue: 
+Получен type_id: 1
+Получено propertyName: property_5
+Получено datetimeValue: week=2024-W13
+Получен type_id: 1
+Получено propertyName: property_5
+Получено datetimeValue: week=2024-W14
+Получен type_id: 1
+Получено propertyName: property_5
+Получено datetimeValue: month=2024-04
+Получен type_id: 1
+Получено propertyName: property_5
+Получено datetimeValue: month=2024-04
+Получен type_id: 1
+Получено propertyName: property_5
+Получено datetimeValue: 
+Получен type_id: 1
+Получено propertyName: property_5
+Получено datetimeValue: month=2024-04
+Получен type_id: 1
+Получено propertyName: property_5
+Получено datetimeValue: month=2024-03
+Получен type_id: 1
+Получено propertyName: property_5
+Получено datetimeValue: month=2024-02
+Получен type_id: 1
+Получено propertyName: property_5
+Получено datetimeValue: 
+Получен type_id: 1
+Получено propertyName: property_6
+Получено datetimeValue: 
+Получен type_id: 1
+Получено propertyName: property_2
+Получено datetimeValue: 
+Получен type_id: 1
+Получено propertyName: property_2
+Получено datetimeValue: 
+Получен type_id: 1
+Получено propertyName: property_2
+Получено datetimeValue: 
+Получен type_id: 1
+Получено propertyName: property_3
+Получено datetimeValue: 
+Получен type_id: 1
+Получено propertyName: property_3
+Получено datetimeValue: 
+Получен type_id: 1
+Получено propertyName: property_5
+Получено datetimeValue: 
+Получен type_id: 1
+Получено propertyName: property_5
+Получено datetimeValue: 
+Получен type_id: 1
+Получено propertyName: property_5
+Получено datetimeValue: 
+Получен type_id: 1
+Получено propertyName: property_5
+Получено datetimeValue: 
+Получен type_id: 1
+Получено propertyName: property_5
+Получено datetimeValue: month=2024-04
+Получен type_id: 1
+Получено propertyName: property_5
+Получено datetimeValue: month=2024-03
+Получен type_id: 1
+Получено propertyName: property_5
+Получено datetimeValue: 
+Получен type_id: 1
+Получено propertyName: property_5
+Получено datetimeValue: month=2024-03
+Получен type_id: 1
+Получено propertyName: property_5
+Получено datetimeValue: month=2024-03
+Получен type_id: 1
+Получено propertyName: property_5
+Получено datetimeValue: 
+Получен type_id: 1
+Получено propertyName: property_5
+Получено datetimeValue: month=2024-03
+Получен type_id: 1
+Получено propertyName: property_5
+Получено datetimeValue: week=2024-W13
+Получен type_id: 1
+Получено propertyName: property_5
+Получено datetimeValue: date=2024-03-30
+Получен type_id: 1
+Получено propertyName: property_5
+Получено datetimeValue: 
+Получен type_id: 1
+Получено propertyName: property_5
+Получено datetimeValue: month=2024-03
+Получен type_id: 1
+Получено propertyName: property_5
+Получено datetimeValue: week=2024-W13
+Получен type_id: 1
+Получено propertyName: property_5
+Получено datetimeValue: month=2024-03
+Получен type_id: 1
+Получено propertyName: property_5
+Получено datetimeValue: month=2024-03
+Получен type_id: 1
+Получено propertyName: property_5
+Получено datetimeValue: month=2024-03
+Получен type_id: 1
+Получено propertyName: property_5
+Получено datetimeValue: month=2024-03
+Получен type_id: 1
+Получено propertyName: property_5
+Получено datetimeValue: month=2024-03
+Получен type_id: 1
+Получено propertyName: property_5
+Получено datetimeValue: month=2024-03
+Получен type_id: 1
+Получено propertyName: property_5
+Получено datetimeValue: month=2024-03
+Получен type_id: 1
+Получено propertyName: property_5
+Получено datetimeValue: month=2024-03
+Получен type_id: 1
+Получено propertyName: property_5
+Получено datetimeValue: month=2024-03
+Получен type_id: 1
+Получено propertyName: property_5
+Получено datetimeValue: month=2024-03
+Получен type_id: 1
+Получено propertyName: property_5
+Получено datetimeValue: month=2024-02
+Получен type_id: 1
+Получено propertyName: property_5
+Получено datetimeValue: week=2024-W14
+Получен type_id: 1
+Получено propertyName: property_5
+Получено datetimeValue: month=2024-03
+Получен type_id: 1
+Получено propertyName: property_5
+Получено datetimeValue: week=2024-W14
+Получен type_id: 1
+Получено propertyName: property_5
+Получено datetimeValue: month=2024-03
+Получен type_id: 1
+Получено propertyName: property_5
+Получено datetimeValue: 
+Получен type_id: 1
+Получено propertyName: property_6
+Получено datetimeValue: 
+Получен type_id: 1
+Получено propertyName: property_6
+Получено datetimeValue: month=2024-03
+Получен type_id: 1
+Получено propertyName: property_5
+Получено datetimeValue: 
+Получен type_id: 1
+Получено propertyName: property_5
+Получено datetimeValue: month=2024-02
+Получен type_id: 1
+Получено propertyName: property_5
+Получено datetimeValue: month=2024-03
+Получен type_id: 1
+Получено propertyName: property_6
+Получено datetimeValue: undefined
+Получен type_id: 1
+Получено propertyName: property_6
+Получено datetimeValue: month=2024-02
+Получен type_id: 1
+Получено propertyName: property_5
+Получено datetimeValue: month=2024-02
+Получен type_id: 1
+Получено propertyName: property_6
+Получено datetimeValue: month=2024-02
+Получен type_id: 1
+Получено propertyName: property_6
+Получено datetimeValue: month=2024-03
+Получен type_id: 1
+Получено propertyName: property_5
+Получено datetimeValue: month=2024-03
+Получен type_id: 1
+Получено propertyName: property_5
+Получено datetimeValue: month=2024-03
+Получен type_id: 1
+Получено propertyName: property_6
+Получено datetimeValue: month=2024-03
+Получен type_id: 1
+Получено propertyName: property_5
+Получено datetimeValue: month=2024-03
+Получен type_id: 1
+Получено propertyName: property_5
+Получено datetimeValue: month=2024-03
+Получен type_id: 1
+Получено propertyName: property_6
+Получено datetimeValue: month=2024-03
+Получен type_id: 1
+Получено propertyName: property_5
+Получено datetimeValue: month=2024-03
+Получен type_id: 1
+Получено propertyName: property_6
+Получено datetimeValue: month=2024-03
+Получен type_id: 1
+Получено propertyName: property_5
+Получено datetimeValue: 
+Получен type_id: 1
+Получено propertyName: property_5
+Получено datetimeValue: month=2024-03
+Получен type_id: 1
+Получено propertyName: property_6
+Получено datetimeValue: month=2024-03
+Получен type_id: 1
+Получено propertyName: property_6
+Получено datetimeValue: month=2024-03
+Получен type_id: 1
+Получено propertyName: property_6
+Получено datetimeValue: 
+Получен type_id: 1
+Получено propertyName: property_6
+Получено datetimeValue: month=2024-03
+Получен type_id: 1
+Получено propertyName: property_5
+Получено datetimeValue: month=2024-03
+Получен type_id: 1
+Получено propertyName: property_6
+Получено datetimeValue: month=2024-03
+Получен type_id: 1
+Получено propertyName: property_6
+Получено datetimeValue: 
+Получен type_id: 1
+Получено propertyName: property_6
+Получено datetimeValue: month=2024-03
+Получен type_id: 1
+Получено propertyName: property_5
+Получено datetimeValue: month=2024-03
+Получен type_id: 1
+Получено propertyName: property_5
+Получено datetimeValue: month=2024-03
+Получен type_id: 1
+Получено propertyName: property_5
+Получено datetimeValue: month=2024-03
+Получен type_id: 1
+Получено propertyName: property_5
+Получено datetimeValue: 
+Получен type_id: 1
+Получено propertyName: property_5
+Получено datetimeValue: month=2024-03
+Получен type_id: 1
+Получено propertyName: property_6
+Получено datetimeValue: month=2024-03
+Получен type_id: 1
+Получено propertyName: property_6
+Получено datetimeValue: month=2024-03
+Получен type_id: 1
+Получено propertyName: property_5
+Получено datetimeValue: month=2024-03
+Получен type_id: 1
+Получено propertyName: property_5
+Получено datetimeValue: month=2024-03
+Получен type_id: 1
+Получено propertyName: property_6
+Получено datetimeValue: month=2024-03
+Получен type_id: 1
+Получено propertyName: property_6
+Получено datetimeValue: 
+Получен type_id: 1
+Получено propertyName: property_5
+Получено datetimeValue: 
+Получен type_id: 1
+Получено propertyName: property_5
+Получено datetimeValue: month=2024-03
+Получен type_id: 1
+Получено propertyName: property_6
+Получено datetimeValue: month=2024-03
+Получен type_id: 1
+Получено propertyName: property_6
+Получено datetimeValue: 
+Получен type_id: 1
+Получено propertyName: property_5
+Получено datetimeValue: 
+Получен type_id: 1
+Получено propertyName: property_5
+Получено datetimeValue: month=2024-03
+Получен type_id: 1
+Получено propertyName: property_6
+Получено datetimeValue: month=2024-03
+Получен type_id: 1
+Получено propertyName: property_5
+Получено datetimeValue: 
+Получен type_id: 1
+Получено propertyName: property_5
+Получено datetimeValue: month=2024-03
+Получен type_id: 1
+Получено propertyName: property_6
+Получено datetimeValue: month=2024-03
+Получен type_id: 1
+Получено propertyName: property_6
+Получено datetimeValue: month=2024-02
+Получен type_id: 1
+Получено propertyName: property_6
+Получено datetimeValue: month=2024-03
+Получен type_id: 1
+Получено propertyName: property_6
+Получено datetimeValue: 
+Получен type_id: 1
+Получено propertyName: property_6
+Получено datetimeValue: month=2024-03
+Получен type_id: 1
+Получено propertyName: property_6
+Получено datetimeValue: 
+Получен type_id: 1
+Получено propertyName: property_6
+Получено datetimeValue: month=2024-03
+Получен type_id: 1
+Получено propertyName: property_6
+Получено datetimeValue: month=2024-03
+Получен type_id: 1
+Получено propertyName: property_6
+Получено datetimeValue: 
+Получен type_id: 1
+Получено propertyName: property_5
+Получено datetimeValue: 
+Получен type_id: 1
+Получено propertyName: property_5
+Получено datetimeValue: 
+Получен type_id: 1
+Получено propertyName: property_5
+Получено datetimeValue: month=2024-03
+Получен type_id: 1
+Получено propertyName: property_6
+Получено datetimeValue: month=2024-03
+Получен type_id: 1
+Получено propertyName: property_6
+Получено datetimeValue: 
+Получен type_id: 1
+Получено propertyName: property_5
+Получено datetimeValue: 
+Получен type_id: 1
+Получено propertyName: property_5
+Получено datetimeValue: 
+Получен type_id: 1
+Получено propertyName: property_5
+Получено datetimeValue: 
+Получен type_id: 1
+Получено propertyName: property_5
+Получено datetimeValue: 
+Получен type_id: 1
+Получено propertyName: property_5
+Получено datetimeValue: month=2024-04
+Получен type_id: 1
+Получено propertyName: property_5
+Получено datetimeValue: month=2024-03
+Получен type_id: 1
+Получено propertyName: property_5
+Получено datetimeValue: month=2024-02
+Получен type_id: 1
+Получено propertyName: property_5
+Получено datetimeValue: 
+Получен type_id: 1
+Получено propertyName: property_5
+Получено datetimeValue: 
+Получен type_id: 1
+Получено propertyName: property_5
+Получено datetimeValue: 
+Получен type_id: 1
+Получено propertyName: property_6
+Получено datetimeValue: 
+Получен type_id: 1
+Получено propertyName: property_5
+Получено datetimeValue: 
+Получен type_id: 1
+Получено propertyName: property_5
+Получено datetimeValue: 
+Получен type_id: 1
+Получено propertyName: property_5
+Получено datetimeValue: 
+Получен type_id: 1
+Получено propertyName: property_5
+Получено datetimeValue: month=2024-03
+Получен type_id: 1
+Получено propertyName: property_5
+Получено datetimeValue: month=2024-04
+Получен type_id: 1
+Получено propertyName: property_5
+Получено datetimeValue: month=2024-03
+Получен type_id: 1
+Получено propertyName: property_5
+Получено datetimeValue: month=2024-04
+Получен type_id: 1
+Получено propertyName: property_5
+Получено datetimeValue: month=2024-03
+Получен type_id: 1
+Получено propertyName: property_5
+Получено datetimeValue: month=2024-04
+Получен type_id: 1
+Получено propertyName: property_5
+Получено datetimeValue: month=2024-03
+Получен type_id: 1
+Получено propertyName: property_5
+Получено datetimeValue: month=2024-04
+Получен type_id: 1
+Получено propertyName: property_5
+Получено datetimeValue: month=2024-03
+Получен type_id: 1
+Получено propertyName: property_5
+Получено datetimeValue: month=2024-04
+Получен type_id: 1
+Получено propertyName: property_5
+Получено datetimeValue: month=2024-03
+Получен type_id: 1
+Получено propertyName: property_5
+Получено datetimeValue: month=2024-04
+Получен type_id: 1
+Получено propertyName: property_5
+Получено datetimeValue: month=2024-03
+Получен type_id: 1
+Получено propertyName: property_5
+Получено datetimeValue: month=2024-04
+Получен type_id: 1
+Получено propertyName: property_5
+Получено datetimeValue: month=2024-03
+Получен type_id: 1
+Получено propertyName: property_5
+Получено datetimeValue: month=2024-04
+Получен type_id: 1
+Получено propertyName: property_5
+Получено datetimeValue: month=2024-03
+Получен type_id: 1
+Получено propertyName: property_5
+Получено datetimeValue: month=2024-04
+Получен type_id: 1
+Получено propertyName: property_5
+Получено datetimeValue: month=2024-03
+Получен type_id: 1
+Получено propertyName: property_5
+Получено datetimeValue: month=2024-04
+Получен type_id: 1
+Получено propertyName: property_5
+Получено datetimeValue: month=2024-02
+Получен type_id: 1
+Получено propertyName: property_5
+Получено datetimeValue: month=2024-03
+Получен type_id: 1
+Получено propertyName: property_5
+Получено datetimeValue: week=2024-W16
+Получен type_id: 1
+Получено propertyName: property_5
+Получено datetimeValue: week=2024-W15
+Получен type_id: 1
+Получено propertyName: property_5
+Получено datetimeValue: week=2024-W14
+Получен type_id: 1
+Получено propertyName: property_5
+Получено datetimeValue: week=2024-W09
+Получен type_id: 1
+Получено propertyName: property_5
+Получено datetimeValue: week=2024-W13
+Получен type_id: 1
+Получено propertyName: property_5
+Получено datetimeValue: week=2024-W12
+Получен type_id: 1
+Получено propertyName: property_5
+Получено datetimeValue: month=2024-04
+Получен type_id: 1
+Получено propertyName: property_5
+Получено datetimeValue: month=2024-03
+Получен type_id: 1
+Получено propertyName: property_5
+Получено datetimeValue: week=2024-W16
+Получен type_id: 1
+Получено propertyName: property_5
+Получено datetimeValue: week=2024-W15
+Получен type_id: 1
+Получено propertyName: property_5
+Получено datetimeValue: week=2024-W14
+Получен type_id: 1
+Получено propertyName: property_5
+Получено datetimeValue: week=2024-W13
+Получен type_id: 1
+Получено propertyName: property_5
+Получено datetimeValue: week=2024-W12
+Получен type_id: 1
+Получено propertyName: property_5
+Получено datetimeValue: date=2024-03-03
+Получен type_id: 1
+Получено propertyName: property_5
+Получено datetimeValue: 
+Получен type_id: 1
+Получено propertyName: property_5
+Получено datetimeValue: 
+Получен type_id: 1
+Получено propertyName: property_5
+Получено datetimeValue: date=2024-04-05
+Получен type_id: 1
+Получено propertyName: property_5
+Получено datetimeValue: 
+Получен type_id: 1
+Получено propertyName: property_5
+Получено datetimeValue: week=2024-W14
+Получен type_id: 1
+Получено propertyName: property_5
+Получено datetimeValue: 
+Получен type_id: 1
+Получено propertyName: property_5
+Получено datetimeValue: 
+Получен type_id: 1
+Получено propertyName: property_5
+Получено datetimeValue: 
+Получен type_id: 1
+Получено propertyName: property_5
+Получено datetimeValue: 
+Получен type_id: 1
+Получено propertyName: property_5
+Получено datetimeValue: 
+Получен type_id: 1
+Получено propertyName: property_5
+Получено datetimeValue: 
+Получен type_id: 1
+Получено propertyName: property_3
+Получено datetimeValue: 
+Получен type_id: 1
+Получено propertyName: property_5
+Получено datetimeValue: 

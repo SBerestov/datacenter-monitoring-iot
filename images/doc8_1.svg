@@ -1,0 +1,118 @@
+﻿<?xml version="1.0" standalone="no"?>
+
+<?xml-stylesheet type="text/css" href="graph.css"?>
+
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" class="graph" aria-labelledby="title" role="img" style="font-family: 'Open Sans', sans-serif;">
+<title id="title">A line chart showing some information</title>
+<g class="grid x-grid" id="xGrid" style="stroke: #ccc;
+  stroke-dasharray: 0;
+  stroke-width: 1;">
+<line x1="50" x2="50" y1="0" y2="350"></line>
+</g>
+<g class="grid y-grid" id="yGrid" style="stroke: #ccc;
+  stroke-dasharray: 0;
+  stroke-width: 1;">
+<line x1="50" x2="770" y1="350" y2="350"></line>
+</g>
+<g class="labels x-labels" style="text-anchor: middle; font-size: 13px;">
+<g class="tick" opacity="1" transform="translate(50,350)">
+<line stroke="currentColor" y2="6"/>
+</g>
+<g class="tick" opacity="1" transform="translate(130.875,350)">
+<line stroke="currentColor" y2="6"/>
+</g>
+<g class="tick" opacity="1" transform="translate(210,350)">
+<line stroke="currentColor" y2="6"/>
+</g>
+<g class="tick" opacity="1" transform="translate(290,350)">
+<line stroke="currentColor" y2="6"/>
+</g>
+<g class="tick" opacity="1" transform="translate(370,350)">
+<line stroke="currentColor" y2="6"/>
+</g>
+<g class="tick" opacity="1" transform="translate(450,350)">
+<line stroke="currentColor" y2="6"/>
+</g>
+<g class="tick" opacity="1" transform="translate(530,350)">
+<line stroke="currentColor" y2="6"/>
+</g>
+<g class="tick" opacity="1" transform="translate(610,350)">
+<line stroke="currentColor" y2="6"/>
+</g>
+<g class="tick" opacity="1" transform="translate(690,350)">
+<line stroke="currentColor" y2="6"/>
+</g>
+<g class="tick" opacity="1" transform="translate(770,350)">
+<line stroke="currentColor" y2="6"/>
+</g>
+<text x="50" y="370">Январь</text>
+<text x="130" y="370">Февраль</text>
+<text x="210" y="370">Март</text>
+<text x="290" y="370">Апрель</text>
+<text x="370" y="370">Май</text>
+<text x="450" y="370">Июнь</text>
+<text x="530" y="370">Июль</text>
+<text x="610" y="370">Август</text>
+<text x="690" y="370">Сентябрь</text>
+<text x="770" y="370">Октябрь</text>
+<text x="740" dy="340" class="label-title" style="font-weight: bold;
+  text-transform: uppercase;
+  font-size: 12px;
+  fill: black;">datetime</text>
+</g>
+<g class="labels y-labels" style="text-anchor: end; font-size: 13px;">
+<g class="tick" opacity="1" transform="translate(50,0)">
+<line stroke="currentColor" x2="-6"/>
+</g>
+<g class="tick" opacity="1" transform="translate(50,50)">
+<line stroke="currentColor" x2="-6"/>
+</g>
+<g class="tick" opacity="1" transform="translate(50,100)">
+<line stroke="currentColor" x2="-6"/>
+</g>
+<g class="tick" opacity="1" transform="translate(50,150)">
+<line stroke="currentColor" x2="-6"/>
+</g>
+<g class="tick" opacity="1" transform="translate(50,200)">
+<line stroke="currentColor" x2="-6"/>
+</g>
+<g class="tick" opacity="1" transform="translate(50,250)">
+<line stroke="currentColor" x2="-6"/>
+</g>
+<g class="tick" opacity="1" transform="translate(50,300)">
+<line stroke="currentColor" x2="-6"/>
+</g>
+<g class="tick" opacity="1" transform="translate(50,350)">
+<line stroke="currentColor" x2="-6"/>
+</g>
+<text x="40" y="10">55</text>
+<text x="40" y="55">50</text>
+<text x="40" y="105">45</text>
+<text x="40" y="155">40</text>
+<text x="40" y="205">35</text>
+<text x="40" y="255">30</text>
+<text x="40" y="305">25</text>
+<text x="40" y="355">20</text>
+<text x="140" y="10" class="label-title" style="font-weight: bold;
+  text-transform: uppercase;
+  font-size: 12px;
+  fill: black;">property_1</text>
+</g>
+<path d="M50 52 L130 47, L210 47, L290 128, L370 52, L450 47, L530 47, L610 128, L690 52, L770 47" stroke="#1f77b4" fill="none"/>
+<g class="data" data-setname="Our first data set" style="fill: red; stroke-width: 1;">
+<circle cx="50" cy="52" data-value="7.2" r="3"></circle>
+<circle cx="130" cy="47" data-value="8.1" r="3"></circle>
+<circle cx="210" cy="47" data-value="7.7" r="3"></circle>
+<circle cx="290" cy="128" data-value="6.8" r="3"></circle>
+<circle cx="370" cy="52" data-value="6.7" r="3"></circle>
+<circle cx="450" cy="47" data-value="7.2" r="3"></circle>
+<circle cx="530" cy="47" data-value="8.1" r="3"></circle>
+<circle cx="610" cy="128" data-value="7.7" r="3"></circle>
+<circle cx="690" cy="52" data-value="6.8" r="3"></circle>
+<circle cx="770" cy="47" data-value="6.8" r="3"></circle>
+</g>
+
+</svg>

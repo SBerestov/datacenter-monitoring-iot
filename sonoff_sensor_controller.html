@@ -1,0 +1,136 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+	<title>Datacenter Monitoring</title>
+	<link rel="stylesheet" type="text/css" href="styles/sonoff_sensor_controller.css">
+</head>
+<body>
+	<div id="header">
+		<table>
+			<tr>
+                <div id="software_name">
+                    Datacenter Monitoring
+                </div>
+                <div id="links_header">
+                    <ul>
+                       <li><a href="main.html">Главная</a></li><!--
+                    --><li><a href="lamp_controller.html">Освещение</a></li><!--
+                    --><li><a href="heater_controller.html">Нагрузка</a></li><!--
+                    --><li><a href="sonoff_sensor_controller.html">Sonoff</a></li><!--
+                    --><li><a href="aqara_sensor_controller.html">Aqara</a></li>
+                    </ul>
+                </div>
+                <div class="toggle_btn">
+                    <img id="imgClickAndChange" src="images/bars-solid.svg" onclick="changeImage()" style="filter: invert(63%) sepia(70%) saturate(9%) hue-rotate(358deg) brightness(91%) contrast(96%); width: 40px;">
+                </div>
+                <div class="dropdown_menu">
+                    <a href="main.html">Главная</a>
+                    <a href="lamp_controller.html">Освещение</a>
+                    <a href="heater_controller.html">Нагрузка</a>
+                    <a href="sonoff_sensor_controller.html">Sonoff</a>
+                    <a href="aqara_sensor_controller.html">Aqara</a>
+                </div>
+			</tr>
+		</table>
+	</div>
+        <section class="main-content">
+            <div class="central" > 
+            <div class="container" style="max-width: 900px;">
+                        <div class="row">
+                            <div class="card">
+                                <div align="space-between" class='card_state' >
+                                    <form action="#" class='form_state'>
+                                            <div class="options_name_state">
+                                                <div class="d-flex justify-content-between">
+                                                    <div class="justify-content-start">
+                                                        <strong class="options_value"></strong>
+                                                        <small class="text-muted" style="font-size: 20px;">%</small>
+                                                    </div>
+                                                    <img class="icon" src="images/droplet-solid.svg" style="filter: invert(62%) sepia(16%) saturate(839%) hue-rotate(133deg) brightness(89%) contrast(91%); width: 40px">
+                                                </div> 
+                                                <div class="flex-shrink-1 flex-grow-1">Влажность</div>
+                                                <div class="dotted_line" style="border-top: 5px dotted darkcyan;"></div>       
+                                            </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div align="space-between" class='card_state' >
+                                    <form action="#" class='form_state'>
+                                            <div class="options_name_state">
+                                                <div class="d-flex justify-content-between">
+                                                    <div class="justify-content-start">
+                                                        <strong class="options_value"></strong>
+                                                        <small class="text-muted" style="font-size: 20px;">lqi</small>
+                                                    </div>
+                                                    <img class="icon" src="images/tower-broadcast-solid.svg" style="filter: invert(64%) sepia(20%) saturate(6808%) hue-rotate(194deg) brightness(97%) contrast(91%); width: 55px">
+                                                </div> 
+                                                <div>Уровень сигнала</div>
+                                                <div class="dotted_line" style="border-top: 5px dotted cornflowerblue;"></div>
+                                                       
+                                            </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div align="space-between" class='card_state' >
+                                    <form action="#" class='form_state'>
+                                            <div class="options_name_state">
+                                                <div class="d-flex justify-content-between">
+                                                    <div class="justify-content-start">
+                                                        <strong class="options_value"></strong>
+                                                        <small class="text-muted" style="font-size: 20px;">°C</small>
+                                                    </div>
+                                                    <img class="icon" src="images/temperature-high-solid.svg" style="filter: invert(23%) sepia(96%) saturate(7266%) hue-rotate(360deg) brightness(93%) contrast(119%); width: 48px">
+                                                </div> 
+                                                <div class="flex-shrink-1 flex-grow-1">Температура</div>
+                                                <div class="dotted_line" style="border-top: 5px dotted red;"></div>
+                                                       
+                                            </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div align="space-between" class='card_state' >
+                                    <form action="#" class='form_state'>
+                                            <div class="options_name_state">
+                                                <div class="d-flex justify-content-between">
+                                                    <div class="justify-content-start">
+                                                        <strong class="options_value"></strong>
+                                                        <small class="text-muted" style="font-size: 20px;">мВ</small>
+                                                    </div>
+                                                    <img class="icon" src="images/bolt-solid.svg" style="filter: invert(72%) sepia(40%) saturate(6588%) hue-rotate(358deg) brightness(101%) contrast(107%); width: 40px;">
+                                                </div> 
+                                                <div class="flex-shrink-1 flex-grow-1">Напряжение</div>
+                                                <div class="dotted_line" style="border-top: 5px dotted darkorange;"></div>
+                                            </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div align="space-between" class='card_state' >
+                                    <form action="#" class='form_state'>
+                                            <div class="options_name_state">
+                                                <div class="d-flex justify-content-between">
+                                                    <div class="justify-content-start">
+                                                        <strong class="options_value"></strong>
+                                                        <small class="text-muted" style="font-size: 20px;">%</small>
+                                                    </div>
+                                                    <img class="icon" src="images/battery-full-solid.svg" style="filter: invert(25%) sepia(79%) saturate(2677%) hue-rotate(93deg) brightness(100%) contrast(73%); width: 50px">
+                                                </div> 
+                                                <div class="flex-shrink-1 flex-grow-1">Батарея</div>
+                                                <div class="dotted_line" style="border-top: 5px dotted forestgreen;"></div>   
+                                            </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+            </div>
+            </div>
+       </section>
+    <script src="sonoff_sensor_controller.js"></script>
+</body>
+</html>

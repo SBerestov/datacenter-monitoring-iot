@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 390" aria-labelledby="title" style="font-family: Open Sans, sans-serif;">
+    <title id="title">Уровень сигнала</title>
+    <style>
+        .grid { stroke: #838383; stroke-width: 1; }
+        .labels { font-size: 11px; }
+        .data-line { stroke: rgba(0,0,255,0.3); stroke-width: 3; fill: none; }
+        .data-point { fill: rgba(0,0,255,1.0); }
+        .y-label { text-anchor: end; }
+        text { font-size: 11px; }
+    </style>
+    
+    <!-- Сетка -->
+    <line x1="50" y1="40" x2="50" y2="390" class="grid"/>
+    <line x1="50" y1="390" x2="770" y2="390" class="grid"/>
+    
+    <!-- Название графика -->
+    <text x="55" y="25" font-weight="bold" font-size="12">Уровень сигнала</text>
+    
+    <!-- Ось Y -->
+    <line x1="45" y1="40.0" x2="770" y2="40.0" stroke="#ccc" stroke-width="0.7"/>
+    <text x="40" y="44.0" class="y-label">233.8</text>
+    <line x1="45" y1="98.33333333333334" x2="770" y2="98.33333333333334" stroke="#ccc" stroke-width="0.7"/>
+    <text x="40" y="102.33333333333334" class="y-label">198.3</text>
+    <line x1="45" y1="156.66666666666669" x2="770" y2="156.66666666666669" stroke="#ccc" stroke-width="0.7"/>
+    <text x="40" y="160.66666666666669" class="y-label">162.9</text>
+    <line x1="45" y1="215.0" x2="770" y2="215.0" stroke="#ccc" stroke-width="0.7"/>
+    <text x="40" y="219.0" class="y-label">127.4</text>
+    <line x1="45" y1="273.33333333333337" x2="770" y2="273.33333333333337" stroke="#ccc" stroke-width="0.7"/>
+    <text x="40" y="277.33333333333337" class="y-label">91.9</text>
+    <line x1="45" y1="331.6666666666667" x2="770" y2="331.6666666666667" stroke="#ccc" stroke-width="0.7"/>
+    <text x="40" y="335.6666666666667" class="y-label">56.5</text>
+    <line x1="45" y1="390.0" x2="770" y2="390.0" stroke="#ccc" stroke-width="0.7"/>
+    <text x="40" y="394.0" class="y-label">21.0</text>
+    
+    <!-- Данные -->
+    <path d="M 50.0,311.0526315789474 L 74.0,376.8421052631579 L 98.0,215.6578947368421 L 122.0,390.0 L 146.0,337.36842105263156 L 170.0,190.98684210526318 L 194.0,342.3026315789474 L 218.0,243.6184210526316 L 242.0,135.06578947368425 L 266.0,261.7105263157895 L 290.0,284.7368421052632 L 314.0,386.7105263157895 L 338.0,184.11184210526318 L 362.0,175.54276315789474 L 386.0,193.96381578947367 L 410.0,183.20723684210532 L 434.0,160.85526315789477 L 458.0,167.6809210526316 L 482.0,149.29276315789477 L 506.0,109.375 L 530.0,83.84868421052636 L 554.0,71.85855263157896 L 578.0,55.378289473684276 L 602.0,56.94078947368422 L 626.0,59.40789473684214 L 650.0,62.26973684210532 L 674.0,61.29934210526318 L 698.0,53.10855263157896 L 722.0,166.2171052631579 L 746.0,40.0 L 770.0,40.92105263157896" class="data-line"/>
+    
+    
+    
+    <!-- Подписи оси X -->
+    <line x1="50.0" y1="390" x2="50.0" y2="40" stroke="#ccc" stroke-width="0.7"/>
+    <text x="50.0" y="410" text-anchor="middle">14-Окт.-23 г.</text>
+    <line x1="74.0" y1="390" x2="74.0" y2="40" stroke="#ccc" stroke-width="0.7"/>
+    <line x1="98.0" y1="390" x2="98.0" y2="40" stroke="#ccc" stroke-width="0.7"/>
+    <line x1="122.0" y1="390" x2="122.0" y2="40" stroke="#ccc" stroke-width="0.7"/>
+    <text x="122.0" y="410" text-anchor="middle">25-Ноя.-23 г.</text>
+    <line x1="146.0" y1="390" x2="146.0" y2="40" stroke="#ccc" stroke-width="0.7"/>
+    <line x1="170.0" y1="390" x2="170.0" y2="40" stroke="#ccc" stroke-width="0.7"/>
+    <line x1="194.0" y1="390" x2="194.0" y2="40" stroke="#ccc" stroke-width="0.7"/>
+    <text x="194.0" y="410" text-anchor="middle">06-Янв.-24 г.</text>
+    <line x1="218.0" y1="390" x2="218.0" y2="40" stroke="#ccc" stroke-width="0.7"/>
+    <line x1="242.0" y1="390" x2="242.0" y2="40" stroke="#ccc" stroke-width="0.7"/>
+    <line x1="266.0" y1="390" x2="266.0" y2="40" stroke="#ccc" stroke-width="0.7"/>
+    <text x="266.0" y="410" text-anchor="middle">17-Фев.-24 г.</text>
+    <line x1="290.0" y1="390" x2="290.0" y2="40" stroke="#ccc" stroke-width="0.7"/>
+    <line x1="314.0" y1="390" x2="314.0" y2="40" stroke="#ccc" stroke-width="0.7"/>
+    <line x1="338.0" y1="390" x2="338.0" y2="40" stroke="#ccc" stroke-width="0.7"/>
+    <text x="338.0" y="410" text-anchor="middle">28-Мар.-24 г.</text>
+    <line x1="362.0" y1="390" x2="362.0" y2="40" stroke="#ccc" stroke-width="0.7"/>
+    <line x1="386.0" y1="390" x2="386.0" y2="40" stroke="#ccc" stroke-width="0.7"/>
+    <line x1="410.0" y1="390" x2="410.0" y2="40" stroke="#ccc" stroke-width="0.7"/>
+    <text x="410.0" y="410" text-anchor="middle">02-Апр.-24 г.</text>
+    <line x1="434.0" y1="390" x2="434.0" y2="40" stroke="#ccc" stroke-width="0.7"/>
+    <line x1="458.0" y1="390" x2="458.0" y2="40" stroke="#ccc" stroke-width="0.7"/>
+    <line x1="482.0" y1="390" x2="482.0" y2="40" stroke="#ccc" stroke-width="0.7"/>
+    <text x="482.0" y="410" text-anchor="middle">12-Апр.-24 г.</text>
+    <line x1="506.0" y1="390" x2="506.0" y2="40" stroke="#ccc" stroke-width="0.7"/>
+    <line x1="530.0" y1="390" x2="530.0" y2="40" stroke="#ccc" stroke-width="0.7"/>
+    <line x1="554.0" y1="390" x2="554.0" y2="40" stroke="#ccc" stroke-width="0.7"/>
+    <text x="554.0" y="410" text-anchor="middle">23-Апр.-24 г.</text>
+    <line x1="578.0" y1="390" x2="578.0" y2="40" stroke="#ccc" stroke-width="0.7"/>
+    <line x1="602.0" y1="390" x2="602.0" y2="40" stroke="#ccc" stroke-width="0.7"/>
+    <line x1="626.0" y1="390" x2="626.0" y2="40" stroke="#ccc" stroke-width="0.7"/>
+    <text x="626.0" y="410" text-anchor="middle">06-Май-24 г.</text>
+    <line x1="650.0" y1="390" x2="650.0" y2="40" stroke="#ccc" stroke-width="0.7"/>
+    <line x1="674.0" y1="390" x2="674.0" y2="40" stroke="#ccc" stroke-width="0.7"/>
+    <line x1="698.0" y1="390" x2="698.0" y2="40" stroke="#ccc" stroke-width="0.7"/>
+    <text x="698.0" y="410" text-anchor="middle">13-Май-24 г.</text>
+    <line x1="722.0" y1="390" x2="722.0" y2="40" stroke="#ccc" stroke-width="0.7"/>
+    <line x1="746.0" y1="390" x2="746.0" y2="40" stroke="#ccc" stroke-width="0.7"/>
+    <line x1="770.0" y1="390" x2="770.0" y2="40" stroke="#ccc" stroke-width="0.7"/>
+    <text x="770.0" y="410" text-anchor="middle">04-Июл.-24 г.</text>
+
+    <!-- Точки данных -->
+    <circle cx="50.0" cy="311.0526315789474" r="3" class="data-point"/>
+    <circle cx="74.0" cy="376.8421052631579" r="3" class="data-point"/>
+    <circle cx="98.0" cy="215.6578947368421" r="3" class="data-point"/>
+    <circle cx="122.0" cy="390.0" r="3" class="data-point"/>
+    <circle cx="146.0" cy="337.36842105263156" r="3" class="data-point"/>
+    <circle cx="170.0" cy="190.98684210526318" r="3" class="data-point"/>
+    <circle cx="194.0" cy="342.3026315789474" r="3" class="data-point"/>
+    <circle cx="218.0" cy="243.6184210526316" r="3" class="data-point"/>
+    <circle cx="242.0" cy="135.06578947368425" r="3" class="data-point"/>
+    <circle cx="266.0" cy="261.7105263157895" r="3" class="data-point"/>
+    <circle cx="290.0" cy="284.7368421052632" r="3" class="data-point"/>
+    <circle cx="314.0" cy="386.7105263157895" r="3" class="data-point"/>
+    <circle cx="338.0" cy="184.11184210526318" r="3" class="data-point"/>
+    <circle cx="362.0" cy="175.54276315789474" r="3" class="data-point"/>
+    <circle cx="386.0" cy="193.96381578947367" r="3" class="data-point"/>
+    <circle cx="410.0" cy="183.20723684210532" r="3" class="data-point"/>
+    <circle cx="434.0" cy="160.85526315789477" r="3" class="data-point"/>
+    <circle cx="458.0" cy="167.6809210526316" r="3" class="data-point"/>
+    <circle cx="482.0" cy="149.29276315789477" r="3" class="data-point"/>
+    <circle cx="506.0" cy="109.375" r="3" class="data-point"/>
+    <circle cx="530.0" cy="83.84868421052636" r="3" class="data-point"/>
+    <circle cx="554.0" cy="71.85855263157896" r="3" class="data-point"/>
+    <circle cx="578.0" cy="55.378289473684276" r="3" class="data-point"/>
+    <circle cx="602.0" cy="56.94078947368422" r="3" class="data-point"/>
+    <circle cx="626.0" cy="59.40789473684214" r="3" class="data-point"/>
+    <circle cx="650.0" cy="62.26973684210532" r="3" class="data-point"/>
+    <circle cx="674.0" cy="61.29934210526318" r="3" class="data-point"/>
+    <circle cx="698.0" cy="53.10855263157896" r="3" class="data-point"/>
+    <circle cx="722.0" cy="166.2171052631579" r="3" class="data-point"/>
+    <circle cx="746.0" cy="40.0" r="3" class="data-point"/>
+    <circle cx="770.0" cy="40.92105263157896" r="3" class="data-point"/>
+    
+    <text x="755" y="422" font-weight="bold" font-size="12" text-anchor="end">Время</text>
+</svg>

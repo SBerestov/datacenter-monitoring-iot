@@ -1,0 +1,656 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>Datacenter Monitoring</title>
+	<link rel="stylesheet" type="text/css" href="styles/aqara_sensor_controller.css">
+</head>
+<body>
+	<div id="header">
+		<table>
+			<tr>
+                <div id="software_name">
+                    Datacenter Monitoring
+                </div>
+                <div id="links_header">
+                    <ul>
+                        <li><a href="main.html" class="tab">Главная</a></li>
+                        <li><a href="heater_controller.html" class="tab">Детальный вид</a></li>
+                        <li><a href="aqara_sensor_controller.html" class="tab">Табличный вид</a></li>
+                    </ul>
+                </div>
+                <div class="toggle_btn">
+                    <img id="imgClickAndChange" src="images/bars-solid.svg" onclick="changeImage()" style="filter: invert(63%) sepia(70%) saturate(9%) hue-rotate(358deg) brightness(91%) contrast(96%); width: 40px;"
+                    draggable="false">
+                </div>
+                <div class="dropdown_menu">
+                    <a href="main.html">Главная</a>
+                    <a href="heater_controller.html">Детальный вид</a>
+                    <a href="aqara_sensor_controller.html">Табличный вид</a>
+                </div>
+			</tr>
+		</table>
+	</div>
+    <div class="main">        
+        <div class="card" >
+            <div class="row">
+                <div class="sensors-sum-text">
+                    <div style="font-size: 24px; margin-right: 5px;">Всего:</div>
+                    <strong class="sensors-sum-value" style="font-size: 33px; margin-right: 5px; color: #0080FF;">14</strong>
+                    <small class="text-muted" style="font-size: 12px; font-family: Tahoma,Arial;">датчиков</small>
+                </div>
+                <div class="top_buttons">
+                    <button type="button" class="button1" onclick="readFile()">Обновить данные</button>
+                    <input id="table-view-button" class="button2" type="button" onclick="location.href='heater_controller.html';" value="Детальный вид"></input>
+                </div>
+            </div>
+            <div class="row">
+                <table class="sensors-table">
+                    <thead>
+                        <tr>
+                          <th>Номер датчика</th>
+                          <th>Локация</th>
+                          <th>Влажность</th>
+                          <th>Уровень сигнала</th>
+                          <th>Кол-во отключений</th>
+                          <th>Давление</th>
+                          <th>Температура</th>
+                          <th>Напряжение</th>
+                          <th>Батарея</th>
+                          <th>Дата/Время</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+            </div>
+                <!--
+                <img src="images/doc8.svg">
+                <form class="bottom_buttons">
+                    <button type="button" class="button3">ЦОД</button>
+                    <button type="button" class="button4">305-ая</button>
+                    <button type="button" class="button5">Серверная тит. 85-01</button>
+                    <button type="button" class="button6">ЛАЗ (Цех связи)</button>
+                </form>
+                -->
+            
+            <!--
+            <div class="monitoring_form" style="width: auto;">
+                <h3 class="main-location" style="text-align: center; font-size: 30px; margin-top: 15px;">ЦОД</h3>
+                <h3 class="location-1">Зал А</h3>
+                <div id="container-1" class="container">
+                    <div class="container_cards">
+                        <button class="accordion-btn">
+                            <div class="justify-content-between">
+                                <div>Датчик 1</div>
+                                <div class="plus-and-minus">+</div>
+                            </div>
+                        </button>
+                        <div class="cards">
+                            <div class="minicard" style="background: darkcyan;">
+                                <div class="options_name_state">
+                                    <div class="justify-content-between">
+                                        <div class="justify-content-start">
+                                            <strong class="options_value" style="color: #ffffff;">35.53</strong>
+                                            <small class="text-muted" style="color: #ffffff;">%</small>
+                                        </div>
+                                        <img class="icon" src="images/droplet-solid.svg" style="filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(93deg) brightness(103%) contrast(103%); height: 20px">
+                                    </div> 
+                                    
+                                </div>
+                            </div>
+                            <div class="minicard" style="background: cornflowerblue;">
+                                <div class="options_name_state">
+                                    <div class="justify-content-between">
+                                        <div class="justify-content-start">
+                                            <strong class="options_value" style="color: #ffffff;">93</strong>
+                                            <small class="text-muted" style="color: #ffffff;">lqi</small>
+                                        </div>
+                                        <img class="icon" src="images/tower-broadcast-solid.svg" style="filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(93deg) brightness(103%) contrast(103%); height: 20px">
+                                    </div> 
+                                    
+                                </div>
+                            </div>
+                            <div class="minicard" style="background: darkmagenta;">
+                                <div class="options_name_state">
+                                    <div class="justify-content-between">
+                                        <div class="justify-content-start">
+                                            <strong class="options_value" style="color: #ffffff;">4</strong>
+                                        </div>
+                                        <img class="icon" src="images/plug-circle-exclamation-solid.svg" style="filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(93deg) brightness(103%) contrast(103%); height: 20px">
+                                    </div> 
+                                        
+                                </div>
+                            </div>
+                            <div class="minicard" style="background: coral;">
+                                <div class="options_name_state">
+                                    <div class="justify-content-between">
+                                        <div class="justify-content-start">
+                                            <strong class="options_value" style="color: #ffffff;">993.3</strong>
+                                            <small class="text-muted" style="color: #ffffff;">ГПа</small>
+                                        </div>
+                                        <img class="icon" src="images/cloud-arrow-up-solid.svg" style="filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(93deg) brightness(103%) contrast(103%); height: 20px">
+                                    </div> 
+                                    
+                                </div>
+                            </div>
+                            <div class="minicard" style="background: red;">             
+                                <div class="options_name_state">
+                                    <div class="justify-content-between">
+                                        <div class="justify-content-start">
+                                            <strong class="options_value" style="color: #ffffff;">23.2</strong>
+                                            <small class="text-muted" style="color: #ffffff;">°C</small>
+                                        </div>
+                                        <img class="icon" src="images/temperature-high-solid.svg" style="filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(93deg) brightness(103%) contrast(103%); height: 20px">
+                                    </div> 
+                                    
+                                </div>
+                            </div>
+                            <div class="minicard" style="background: darkorange;">
+                                <div class="options_name_state">
+                                    <div class="justify-content-between">
+                                        <div class="justify-content-start">
+                                            <strong class="options_value" style="color: #ffffff;">3005</strong>
+                                            <small class="text-muted" style="color: #ffffff;">мВ</small>
+                                        </div>
+                                        <img class="icon" src="images/bolt-solid.svg" style="filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(93deg) brightness(103%) contrast(103%); height: 20px;">
+                                    </div> 
+                                    
+                                </div>
+                            </div>
+                            <div class="minicard" style="background: forestgreen;">
+                                <div class="options_name_state">
+                                    <div class="justify-content-between">
+                                        <div class="justify-content-start">
+                                            <strong class="options_value" style="color: #ffffff;">100</strong>
+                                            <small class="text-muted" style="color: #ffffff;">%</small>
+                                        </div>
+                                        <img class="icon" src="images/battery-full-solid.svg" style="filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(93deg) brightness(103%) contrast(103%); height: 20px">
+                                    </div> 
+                                       
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="container_cards">
+                        <button class="accordion-btn">
+                            <div class="justify-content-between">
+                                <div>Датчик 2</div>
+                                <div class="plus-and-minus">+</div>
+                            </div>
+                        </button>
+                        <div class="cards">
+                            <div class="minicard">
+                                <div class="options_name_state" style="border: 2px solid darkcyan;">
+                                    <div class="justify-content-between">
+                                        <div class="justify-content-start">
+                                            <strong class="options_value" style="color:darkcyan;">35.53</strong>
+                                            <small class="text-muted" style="color:darkcyan;">%</small>
+                                        </div>
+                                        <img class="icon" src="images/droplet-solid.svg" style="filter: invert(62%) sepia(16%) saturate(839%) hue-rotate(133deg) brightness(89%) contrast(91%); height: 20px">
+                                    </div> 
+                                    
+                                </div>
+                            </div>
+                            <div class="minicard">
+                                <div class="options_name_state" style="border: 2px solid cornflowerblue;">
+                                    <div class="justify-content-between">
+                                        <div class="justify-content-start">
+                                            <strong class="options_value" style="color: cornflowerblue;">93</strong>
+                                            <small class="text-muted" style="color: cornflowerblue;">lqi</small>
+                                        </div>
+                                        <img class="icon" src="images/tower-broadcast-solid.svg" style="filter: invert(64%) sepia(20%) saturate(6808%) hue-rotate(194deg) brightness(97%) contrast(91%); height: 20px">
+                                    </div> 
+                                    
+                                </div>
+                            </div>
+                            <div class="minicard">
+                                <div class="options_name_state" style="border: 2px solid darkmagenta;">
+                                    <div class="justify-content-between">
+                                        <div class="justify-content-start">
+                                            <strong class="options_value" style="color: darkmagenta;">4</strong>
+                                        </div>
+                                        <img class="icon" src="images/plug-circle-exclamation-solid.svg" style="filter: invert(11%) sepia(65%) saturate(6453%) hue-rotate(294deg) brightness(87%) contrast(110%); height: 20px">
+                                    </div> 
+                                        
+                                </div>
+                            </div>
+                            <div class="minicard">
+                                <div class="options_name_state" style="border: 2px solid coral;">
+                                    <div class="justify-content-between">
+                                        <div class="justify-content-start">
+                                            <strong class="options_value" style="color: coral;">993.3</strong>
+                                            <small class="text-muted" style="color: coral;">ГПа</small>
+                                        </div>
+                                        <img class="icon" src="images/cloud-arrow-up-solid.svg" style="filter: invert(77%) sepia(70%) saturate(4080%) hue-rotate(325deg) brightness(102%) contrast(103%); height: 20px">
+                                    </div> 
+                                    
+                                </div>
+                            </div>
+                            <div class="minicard">             
+                                <div class="options_name_state" style="border: 2px solid red;">
+                                    <div class="justify-content-between">
+                                        <div class="justify-content-start">
+                                            <strong class="options_value" style="color: red;">23.2</strong>
+                                            <small class="text-muted" style="color: red;">°C</small>
+                                        </div>
+                                        <img class="icon" src="images/temperature-high-solid.svg" style="filter: invert(23%) sepia(96%) saturate(7266%) hue-rotate(360deg) brightness(93%) contrast(119%); height: 20px">
+                                    </div> 
+                                    
+                                </div>
+                            </div>
+                            <div class="minicard">
+                                <div class="options_name_state" style="border: 2px solid darkorange;">
+                                    <div class="justify-content-between">
+                                        <div class="justify-content-start">
+                                            <strong class="options_value" style="color: darkorange;">3005</strong>
+                                            <small class="text-muted" style="color: darkorange;">мВ</small>
+                                        </div>
+                                        <img class="icon" src="images/bolt-solid.svg" style="filter: invert(72%) sepia(40%) saturate(6588%) hue-rotate(358deg) brightness(101%) contrast(107%); height: 20px;">
+                                    </div> 
+                                    
+                                </div>
+                            </div>
+                            <div class="minicard">
+                                <div class="options_name_state" style="border: 2px solid forestgreen;">
+                                    <div class="justify-content-between">
+                                        <div class="justify-content-start">
+                                            <strong class="options_value" style="color: forestgreen;">100</strong>
+                                            <small class="text-muted" style="color: forestgreen;">%</small>
+                                        </div>
+                                        <img class="icon" src="images/battery-full-solid.svg" style="filter: invert(25%) sepia(79%) saturate(2677%) hue-rotate(93deg) brightness(100%) contrast(73%); height: 20px">
+                                    </div> 
+                                       
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <h3 class="location-2">Зал Б</h3>
+                <div id="container-2" class="container">
+                    <div class="container_cards">
+                        <button class="accordion-btn">
+                            <div class="justify-content-between">
+                                <div>Датчик 1</div>
+                                <div class="plus-and-minus">+</div>
+                            </div>
+                        </button>
+                        <div class="cards">
+                            <div class="minicard">
+                                <div class="options_name_state">
+                                    <div class="justify-content-between">
+                                        <div class="justify-content-start">
+                                            <strong class="options_value">35.53</strong>
+                                            <small class="text-muted">%</small>
+                                        </div>
+                                        <img class="icon" src="images/droplet-solid.svg" style=" height: 20px">
+                                    </div> 
+                                    
+                                </div>
+                            </div>
+                            <div class="minicard">
+                                <div class="options_name_state">
+                                    <div class="justify-content-between">
+                                        <div class="justify-content-start">
+                                            <strong class="options_value">93</strong>
+                                            <small class="text-muted">lqi</small>
+                                        </div>
+                                        <img class="icon" src="images/tower-broadcast-solid.svg" style=" height: 20px">
+                                    </div> 
+                                    
+                                </div>
+                            </div>
+                            <div class="minicard">
+                                <div class="options_name_state">
+                                    <div class="justify-content-between">
+                                        <div class="justify-content-start">
+                                            <strong class="options_value">4</strong>
+                                        </div>
+                                        <img class="icon" src="images/plug-circle-exclamation-solid.svg" style=" height: 20px">
+                                    </div> 
+                                        
+                                </div>
+                            </div>
+                            <div class="minicard">
+                                <div class="options_name_state">
+                                    <div class="justify-content-between">
+                                        <div class="justify-content-start">
+                                            <strong class="options_value">993.3</strong>
+                                            <small class="text-muted">ГПа</small>
+                                        </div>
+                                        <img class="icon" src="images/cloud-arrow-up-solid.svg" style=" height: 20px">
+                                    </div> 
+                                    
+                                </div>
+                            </div>
+                            <div class="minicard">             
+                                <div class="options_name_state">
+                                    <div class="justify-content-between">
+                                        <div class="justify-content-start">
+                                            <strong class="options_value">23.2</strong>
+                                            <small class="text-muted">°C</small>
+                                        </div>
+                                        <img class="icon" src="images/temperature-high-solid.svg" style=" height: 20px">
+                                    </div> 
+                                    
+                                </div>
+                            </div>
+                            <div class="minicard">
+                                <div class="options_name_state">
+                                    <div class="justify-content-between">
+                                        <div class="justify-content-start">
+                                            <strong class="options_value">3005</strong>
+                                            <small class="text-muted">мВ</small>
+                                        </div>
+                                        <img class="icon" src="images/bolt-solid.svg" style=" height: 20px;">
+                                    </div> 
+                                    
+                                </div>
+                            </div>
+                            <div class="minicard">
+                                <div class="options_name_state">
+                                    <div class="justify-content-between">
+                                        <div class="justify-content-start">
+                                            <strong class="options_value">100</strong>
+                                            <small class="text-muted">%</small>
+                                        </div>
+                                        <img class="icon" src="images/battery-full-solid.svg" style=" height: 20px">
+                                    </div> 
+                                       
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container_cards">
+                        <button class="accordion-btn">
+                            <div class="justify-content-between">
+                                <div>Датчик 2</div>
+                                <div class="plus-and-minus">+</div>
+                            </div>
+                        </button>
+                        <div class="cards">
+                            <div class="minicard">
+                                <div class="options_name_state">
+                                    <div class="justify-content-between">
+                                        <div class="justify-content-start">
+                                            <strong class="options_value">35.53</strong>
+                                            <small class="text-muted">%</small>
+                                        </div>
+                                        <img class="icon" src="images/droplet-solid.svg" style=" height: 20px">
+                                    </div> 
+                                    
+                                </div>
+                            </div>
+                            <div class="minicard">
+                                <div class="options_name_state">
+                                    <div class="justify-content-between">
+                                        <div class="justify-content-start">
+                                            <strong class="options_value">93</strong>
+                                            <small class="text-muted">lqi</small>
+                                        </div>
+                                        <img class="icon" src="images/tower-broadcast-solid.svg" style=" height: 20px">
+                                    </div> 
+                                    
+                                </div>
+                            </div>
+                            <div class="minicard">
+                                <div class="options_name_state">
+                                    <div class="justify-content-between">
+                                        <div class="justify-content-start">
+                                            <strong class="options_value">4</strong>
+                                        </div>
+                                        <img class="icon" src="images/plug-circle-exclamation-solid.svg" style=" height: 20px">
+                                    </div> 
+                                        
+                                </div>
+                            </div>
+                            <div class="minicard">
+                                <div class="options_name_state">
+                                    <div class="justify-content-between">
+                                        <div class="justify-content-start">
+                                            <strong class="options_value">993.3</strong>
+                                            <small class="text-muted">ГПа</small>
+                                        </div>
+                                        <img class="icon" src="images/cloud-arrow-up-solid.svg" style=" height: 20px">
+                                    </div> 
+                                    
+                                </div>
+                            </div>
+                            <div class="minicard">             
+                                <div class="options_name_state">
+                                    <div class="justify-content-between">
+                                        <div class="justify-content-start">
+                                            <strong class="options_value">23.2</strong>
+                                            <small class="text-muted">°C</small>
+                                        </div>
+                                        <img class="icon" src="images/temperature-high-solid.svg" style=" height: 20px">
+                                    </div> 
+                                    
+                                </div>
+                            </div>
+                            <div class="minicard">
+                                <div class="options_name_state">
+                                    <div class="justify-content-between">
+                                        <div class="justify-content-start">
+                                            <strong class="options_value">3005</strong>
+                                            <small class="text-muted">мВ</small>
+                                        </div>
+                                        <img class="icon" src="images/bolt-solid.svg" style=" height: 20px;">
+                                    </div> 
+                                    
+                                </div>
+                            </div>
+                            <div class="minicard">
+                                <div class="options_name_state">
+                                    <div class="justify-content-between">
+                                        <div class="justify-content-start">
+                                            <strong class="options_value">100</strong>
+                                            <small class="text-muted">%</small>
+                                        </div>
+                                        <img class="icon" src="images/battery-full-solid.svg" style=" height: 20px">
+                                    </div> 
+                                       
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <h3 class="location-3">Зал В</h3>
+                <div id="container-3" class="container">
+                    <div class="container_cards">
+                        <button class="accordion-btn">
+                            <div class="justify-content-between">
+                                <div>Датчик 1</div>
+                                <div class="plus-and-minus">+</div>
+                            </div>
+                        </button>
+                        <div class="cards">
+                            <div class="minicard">
+                                <div class="options_name_state">
+                                    <div class="justify-content-between">
+                                        <div class="justify-content-start">
+                                            <strong class="options_value">35.53</strong>
+                                            <small class="text-muted">%</small>
+                                        </div>
+                                        <img class="icon" src="images/droplet-solid.svg" style=" height: 20px">
+                                    </div> 
+                                    
+                                </div>
+                            </div>
+                            <div class="minicard">
+                                <div class="options_name_state">
+                                    <div class="justify-content-between">
+                                        <div class="justify-content-start">
+                                            <strong class="options_value">93</strong>
+                                            <small class="text-muted">lqi</small>
+                                        </div>
+                                        <img class="icon" src="images/tower-broadcast-solid.svg" style=" height: 20px">
+                                    </div> 
+                                    
+                                </div>
+                            </div>
+                            <div class="minicard">
+                                <div class="options_name_state">
+                                    <div class="justify-content-between">
+                                        <div class="justify-content-start">
+                                            <strong class="options_value">4</strong>
+                                        </div>
+                                        <img class="icon" src="images/plug-circle-exclamation-solid.svg" style=" height: 20px">
+                                    </div> 
+                                        
+                                </div>
+                            </div>
+                            <div class="minicard">
+                                <div class="options_name_state">
+                                    <div class="justify-content-between">
+                                        <div class="justify-content-start">
+                                            <strong class="options_value">993.3</strong>
+                                            <small class="text-muted">ГПа</small>
+                                        </div>
+                                        <img class="icon" src="images/cloud-arrow-up-solid.svg" style=" height: 20px">
+                                    </div> 
+                                    
+                                </div>
+                            </div>
+                            <div class="minicard">             
+                                <div class="options_name_state">
+                                    <div class="justify-content-between">
+                                        <div class="justify-content-start">
+                                            <strong class="options_value">23.2</strong>
+                                            <small class="text-muted">°C</small>
+                                        </div>
+                                        <img class="icon" src="images/temperature-high-solid.svg" style=" height: 20px">
+                                    </div> 
+                                    
+                                </div>
+                            </div>
+                            <div class="minicard">
+                                <div class="options_name_state">
+                                    <div class="justify-content-between">
+                                        <div class="justify-content-start">
+                                            <strong class="options_value">3005</strong>
+                                            <small class="text-muted">мВ</small>
+                                        </div>
+                                        <img class="icon" src="images/bolt-solid.svg" style=" height: 20px;">
+                                    </div> 
+                                    
+                                </div>
+                            </div>
+                            <div class="minicard">
+                                <div class="options_name_state">
+                                    <div class="justify-content-between">
+                                        <div class="justify-content-start">
+                                            <strong class="options_value">100</strong>
+                                            <small class="text-muted">%</small>
+                                        </div>
+                                        <img class="icon" src="images/battery-full-solid.svg" style=" height: 20px">
+                                    </div> 
+                                       
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container_cards">
+                        <button class="accordion-btn">
+                            <div class="justify-content-between">
+                                <div>Датчик 2</div>
+                                <div class="plus-and-minus">+</div>
+                            </div>
+                        </button>
+                        <div class="cards">
+                            <div class="minicard">
+                                <div class="options_name_state">
+                                    <div class="justify-content-between">
+                                        <div class="justify-content-start">
+                                            <strong class="options_value">35.53</strong>
+                                            <small class="text-muted">%</small>
+                                        </div>
+                                        <img class="icon" src="images/droplet-solid.svg" style=" height: 20px">
+                                    </div> 
+                                    
+                                </div>
+                            </div>
+                            <div class="minicard">
+                                <div class="options_name_state">
+                                    <div class="justify-content-between">
+                                        <div class="justify-content-start">
+                                            <strong class="options_value">93</strong>
+                                            <small class="text-muted">lqi</small>
+                                        </div>
+                                        <img class="icon" src="images/tower-broadcast-solid.svg" style=" height: 20px">
+                                    </div> 
+                                    
+                                </div>
+                            </div>
+                            <div class="minicard">
+                                <div class="options_name_state">
+                                    <div class="justify-content-between">
+                                        <div class="justify-content-start">
+                                            <strong class="options_value">4</strong>
+                                        </div>
+                                        <img class="icon" src="images/plug-circle-exclamation-solid.svg" style=" height: 20px">
+                                    </div> 
+                                        
+                                </div>
+                            </div>
+                            <div class="minicard">
+                                <div class="options_name_state">
+                                    <div class="justify-content-between">
+                                        <div class="justify-content-start">
+                                            <strong class="options_value">993.3</strong>
+                                            <small class="text-muted">ГПа</small>
+                                        </div>
+                                        <img class="icon" src="images/cloud-arrow-up-solid.svg" style=" height: 20px">
+                                    </div> 
+                                    
+                                </div>
+                            </div>
+                            <div class="minicard">             
+                                <div class="options_name_state">
+                                    <div class="justify-content-between">
+                                        <div class="justify-content-start">
+                                            <strong class="options_value">23.2</strong>
+                                            <small class="text-muted">°C</small>
+                                        </div>
+                                        <img class="icon" src="images/temperature-high-solid.svg" style=" height: 20px">
+                                    </div> 
+                                    
+                                </div>
+                            </div>
+                            <div class="minicard">
+                                <div class="options_name_state">
+                                    <div class="justify-content-between">
+                                        <div class="justify-content-start">
+                                            <strong class="options_value">3005</strong>
+                                            <small class="text-muted">мВ</small>
+                                        </div>
+                                        <img class="icon" src="images/bolt-solid.svg" style=" height: 20px;">
+                                    </div> 
+                                    
+                                </div>
+                            </div>
+                            <div class="minicard">
+                                <div class="options_name_state">
+                                    <div class="justify-content-between">
+                                        <div class="justify-content-start">
+                                            <strong class="options_value">100</strong>
+                                            <small class="text-muted">%</small>
+                                        </div>
+                                        <img class="icon" src="images/battery-full-solid.svg" style=" height: 20px">
+                                    </div> 
+                                       
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            -->
+        </div>
+    </div>    
+    <script src="aqara_sensor_controller.js" charset="UTF-8"></script>
+</body>
+</html>

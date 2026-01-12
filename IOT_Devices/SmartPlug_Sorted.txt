@@ -1,0 +1,7 @@
+{"data":[
+{"child_lock":"UNLOCK","current":0,"energy":377.05,"indicator_mode":"off/on","linkquality":99,"power":0,"power_outage_memory":"restore","state":"OFF","voltage":215},
+{"child_lock":"UNLOCK","current":0,"energy":377.05,"indicator_mode":"off/on","linkquality":102,"power":0,"power_outage_memory":"restore","state":"OFF","voltage":217},
+{"child_lock":"UNLOCK","current":0,"energy":377.05,"indicator_mode":"off/on","linkquality":93,"power":0,"power_outage_memory":"restore","state":"OFF","voltage":221},
+{"child_lock":"UNLOCK","current":0,"energy":377.05,"indicator_mode":"off/on","linkquality":102,"power":0,"power_outage_memory":"restore","state":"OFF","voltage":221},
+{"child_lock":"UNLOCK","current":0,"energy":377.05,"indicator_mode":"off/on","linkquality":102,"power":0,"power_outage_memory":"restore","state":"OFF","voltage":217},
+{"child_lock":"UNLOCK","current":0,"energy":377.05,"indicator_mode":"off/on","linkquality":102,"power":0,"power_outage_memory":"restore","state":"OFF","voltage":215}]}
