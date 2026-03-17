@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 490" aria-labelledby="title" style="font-family: Open Sans, sans-serif;">
-    <title id="title">Давление</title>
+    <title id="title">Температура</title>
     <style>
         .grid { stroke: #838383; stroke-width: 1; }
         .labels { font-size: 11px; }
@@ -16,33 +16,45 @@
     <line x1="50" y1="450" x2="770" y2="450" class="grid"/>
     
     <!-- Название графика -->
-    <text x="65" y="15" font-weight="bold" font-size="12">Давление</text>
+    <text x="65" y="15" font-weight="bold" font-size="12">Температура</text>
     
     <!-- Ось Y -->
     <line x1="45" y1="30.0" x2="770" y2="30.0" stroke="#ccc" stroke-width="0.7"/>
-    <text x="40" y="34.0" class="y-label">1010.4</text>
+    <text x="40" y="34.0" class="y-label">27.1</text>
     <line x1="45" y1="100.0" x2="770" y2="100.0" stroke="#ccc" stroke-width="0.7"/>
-    <text x="40" y="104.0" class="y-label">1010.2</text>
+    <text x="40" y="104.0" class="y-label">26.6</text>
     <line x1="45" y1="170.0" x2="770" y2="170.0" stroke="#ccc" stroke-width="0.7"/>
-    <text x="40" y="174.0" class="y-label">1010.0</text>
+    <text x="40" y="174.0" class="y-label">26.2</text>
     <line x1="45" y1="240.0" x2="770" y2="240.0" stroke="#ccc" stroke-width="0.7"/>
-    <text x="40" y="244.0" class="y-label">1009.9</text>
+    <text x="40" y="244.0" class="y-label">25.7</text>
     <line x1="45" y1="310.0" x2="770" y2="310.0" stroke="#ccc" stroke-width="0.7"/>
-    <text x="40" y="314.0" class="y-label">1009.7</text>
+    <text x="40" y="314.0" class="y-label">25.3</text>
     <line x1="45" y1="380.0" x2="770" y2="380.0" stroke="#ccc" stroke-width="0.7"/>
-    <text x="40" y="384.0" class="y-label">1009.5</text>
+    <text x="40" y="384.0" class="y-label">24.8</text>
     <line x1="45" y1="450.0" x2="770" y2="450.0" stroke="#ccc" stroke-width="0.7"/>
-    <text x="40" y="454.0" class="y-label">1009.4</text>
+    <text x="40" y="454.0" class="y-label">24.3</text>
     
     <!-- Данные -->
-    <path d="M 410,450.0" class="data-line"/>
+    <path d="M 50.0,34.565217391304486 L 230.0,348.0434782608694 L 410.0,450.0 L 590.0,30.0 L 770.0,450.0" class="data-line"/>
     
     <!-- Подписи оси X -->
-    <line x1="410" y1="450" x2="410" y2="30" stroke="#ccc" stroke-width="0.7"/>
-    <text x="410" y="470" text-anchor="middle">12-Янв.-26 г.</text>
+    <line x1="50.0" y1="450" x2="50.0" y2="30" stroke="#ccc" stroke-width="0.7"/>
+    <text x="50.0" y="470" text-anchor="middle">12-Янв.-26 г.</text>
+    <line x1="230.0" y1="450" x2="230.0" y2="30" stroke="#ccc" stroke-width="0.7"/>
+    <text x="230.0" y="470" text-anchor="middle">13-Янв.-26 г.</text>
+    <line x1="410.0" y1="450" x2="410.0" y2="30" stroke="#ccc" stroke-width="0.7"/>
+    <text x="410.0" y="470" text-anchor="middle">14-Янв.-26 г.</text>
+    <line x1="590.0" y1="450" x2="590.0" y2="30" stroke="#ccc" stroke-width="0.7"/>
+    <text x="590.0" y="470" text-anchor="middle">15-Янв.-26 г.</text>
+    <line x1="770.0" y1="450" x2="770.0" y2="30" stroke="#ccc" stroke-width="0.7"/>
+    <text x="770.0" y="470" text-anchor="middle">16-Янв.-26 г.</text>
 
     <!-- Точки данных -->
-    <circle cx="410" cy="450.0" r="3" class="data-point"/>
+    <circle cx="50.0" cy="34.565217391304486" r="3" class="data-point"/>
+    <circle cx="230.0" cy="348.0434782608694" r="3" class="data-point"/>
+    <circle cx="410.0" cy="450.0" r="3" class="data-point"/>
+    <circle cx="590.0" cy="30.0" r="3" class="data-point"/>
+    <circle cx="770.0" cy="450.0" r="3" class="data-point"/>
     
     <text x="755" y="482" font-weight="bold" font-size="12" text-anchor="end">Время</text>
 </svg>
