@@ -16,7 +16,7 @@
                 </div>
                 <div id="links_header">
                     <ul class="tabs">
-                        <!-- <li><a href="main.html" class="tab">Дашборд</a></li> -->
+                        <li><a href="main.html" class="tab">Дашборд</a></li>
                         <li><a href="heater_controller.html" class="tab">Детальный вид</a></li>
                     </ul>
                 </div>
@@ -130,15 +130,8 @@
         <p id="location-p">Объекты нахождения</p>
         <div class="under-article">Выберите объект нахождения и устройство</div>
         <div class="object-list"></div>
-        <!--
-        <div class="message" style="margin-top: 20px; display: flex; flex-direction: column; align-items: center; justify-content: center;">
-            <img src="images/repair.svg" style="height: 60px; margin-top: 20px;">
-            <div class="article">Технические работы</div>
-            <p style="margin: 0px 25px 15px 25px; font-size: 16px; font-family: monospace; font-weight: 400; color: rgba(0, 0, 0, .5);">Просьба, оставаться на своих местах</p>
-        </div>
-        -->
 
-        <button type="button" onclick="closeChangeOrDeleteForm()">< Назад</button>
+        <button type="button" onclick="closeChangeOrDeleteForm()"> Назад</button>
     </div>
     <div id="change-or-delete-message">
         <div style="display: flex; justify-content: space-between;">
@@ -262,7 +255,7 @@
             <div class="row">
                 <div class="grid" style="display: flex;">   
                 <form class="form">
-                    <!-- <legend style="font-size: 31px; width: 315px;">Время:</legend>
+                    <legend style="font-size: 31px; width: 315px;">Время:</legend>
                         <div class="content-between">
                             <div class="buttons">
                                 <div>
@@ -283,11 +276,11 @@
                                 </div>
                             </div>
                             <img class="bdsm"src="images/calendar.png" style="height: 45px;" draggable="false">
-                        </div> -->
-                    <!--<div class="submitForm">
+                        </div>
+                    <div class="submitForm">
                         <button class="refresh" onclick="readFile()">Обновить данные</button>
                         <button class="arrow">></button>
-                    </div>-->
+                    </div>
                     <div class="buttons-table-refresh" style="padding-right: 10px;">
                         <input type="button" onclick="readFileWrapper()" value="Обновить данные">
                         <!-- onclick="location.href='aqara_sensor_controller.html';" -->
@@ -295,7 +288,7 @@
                         <input id="detailed-view-button" type="button" onclick="detailedView()" value="Детальный вид" style="display: none;">
                     </div>
                 </form>
-                <!-- <img style="width: 329px; height: 289px; border-radius: 8px;" src="C:\Users\BerestovSM.RTK-INFORM\Desktop\jason-statham-wallpaper.jpg"> -->
+
                 <div class="location-form" style="display: none;">
                     <h3 class="main-location" style="text-align: center; font-size: 30px; font-weight: normal; margin-top: 0px; margin-bottom: 10px;">ЦОД</h3>
                     <div class="vertical-menu" id="buttons-group-1">
@@ -327,83 +320,23 @@
                 <div style="display: block;">
                     <div style="justify-content: space-between; display: flex;">
                         <legend style="font-size: 31px;">Объекты:</legend>
-                        <!-- <button id="settings-button" onclick="openChooseOptionsForm()">
+                        <button id="settings-button" onclick="openChooseOptionsForm()">
                             <img src="images/settings.svg">
                             Изменить
-                        </button> -->
+                        </button>
                     </div>
                     <div class="location-tree"></div>
                 </div>
                 </div>
                 <div class="grid"> 
                 <div class="cards"></div>
-                <!-- <div class="cards" id="type_id_4">
-                    <div class="minicard">
-                        <div align="space-between" class='card_state' >
-                            <form name="data-property" action="#" type="submit" value="property_22" class='form_state'>
-                                <div class="options_name_state">
-                                    <div class="justify-content-between">
-                                        <div class="justify-content-start">
-                                            <strong class="options_value">0</strong>
-                                            <small class="text-muted" style="font-size: 20px;"></small>
-                                        </div>
-                                        <img class="icon" src="images/droplet-solid.svg" style="filter: invert(62%) sepia(16%) saturate(839%) hue-rotate(133deg) brightness(89%) contrast(91%); height: 45px" draggable="false">
-                                    </div> 
-                                    <div>Утечка воды</div>
-                                    <div class="dotted_line" style="border-top: 5px dotted darkcyan;"></div>
-                                    <div class="justify-content-between">
-                                        <div class="flex-shrink-1 flex-grow-1" style="display: none;">Вкл.</div>
-                                        <label class="switch" style="display: none;">
-                                            <input type="checkbox">
-                                            <span class="slider round"></span>
-                                         </label>
-                                    </div>      
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                    <div class="minicard">
-                        <div align="space-between" class='card_state' >
-                            <form name="data-property" action="#" type="submit" value="property_20" class='form_state'>
-                                <div class="options_name_state">
-                                    <div class="justify-content-between">
-                                        <div class="justify-content-start">
-                                            <strong class="options_value">0</strong>
-                                            <small class="text-muted" style="font-size: 20px;">lqi</small>
-                                        </div>
-                                        <img class="icon" src="images/tower-broadcast-solid.svg" style="filter: invert(64%) sepia(20%) saturate(6808%) hue-rotate(194deg) brightness(97%) contrast(91%); height: 45px" draggable="false">
-                                    </div> 
-                                    <div>Уровень сигнала</div>
-                                    <div class="dotted_line" style="border-top: 5px dotted cornflowerblue;"></div>        
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                    <div class="minicard">
-                        <div align="space-between" class='card_state'>
-                            <form name="data-property" action="#" type="submit" value="property_19" class='form_state'>
-                                <div class="options_name_state">
-                                    <div class="justify-content-between">
-                                        <div class="justify-content-start">
-                                            <strong class="options_value">0</strong>
-                                            <small class="text-muted" style="font-size: 20px;"></small>
-                                        </div>
-                                        <img class="icon" src="images/battery-full-solid.svg" style="filter: invert(25%) sepia(79%) saturate(2677%) hue-rotate(93deg) brightness(100%) contrast(73%); height: 45px" draggable="false">
-                                    </div> 
-                                    <div class="flex-shrink-1 flex-grow-1">Батарея разряжена</div>
-                                    <div class="dotted_line" style="border-top: 5px dotted forestgreen;"></div>       
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </div> -->
                 </div>
             </div>  
-            <!-- <form class="calendar">
+            <form class="calendar">
                 <input type="date" name="day" disabled>
                 <input type="week" name="week" disabled>
                 <input type="month" name="month" disabled style="margin-right: 10px;">
-            </form> -->
+            </form>
             <div id="chart_div">
                 <img src="images/doc8.svg" draggable="false">
             </div>
