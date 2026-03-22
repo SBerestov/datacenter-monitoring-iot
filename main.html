@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Datacenter Monitoring</title>
+    <link rel="stylesheet" type="text/css" href="styles/main.css">
+</head>
+<body>
+    <div id="header">
+        <table>
+            <tr>
+                <div id="software_name">
+                    Datacenter Monitoring
+                </div>
+                <div id="links_header">
+                    <ul>
+                        <li><a href="main.html">Дашборд</a></li>
+                        <li><a href="heater_controller.html">Детальный вид</a></li>
+                    </ul>
+                </div>
+                <div class="toggle_btn">
+                    <img id="imgClickAndChange" src="images/bars-solid.svg" onclick="changeImage()" style="filter: invert(63%) sepia(70%) saturate(9%) hue-rotate(358deg) brightness(91%) contrast(96%); width: 40px;">
+                </div>
+                <div class="dropdown_menu">
+                    <a href="main.html">Дашборд</a>
+                    <a href="heater_controller.html">Детальный вид</a>
+                </div>
+            </tr>
+        </table>
+    </div>
+        <div class="container">
+            <div class="header">
+                <h1 style="margin-bottom: 30px;">Дашборд объектов</h1>
+            </div>
+            <!-- <img src="images/exclamation.png" style="height: 45px; filter: invert(100%) sepia(0%) saturate(7494%) hue-rotate(212deg) brightness(104%) contrast(102%);" draggable="false"> -->
+            <div class="dashboard"></div>
+            <div id="map"></div>
+        </div>
+    <script src="main.js"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=0230597b-9afb-4317-b6f2-53adaa9693ba&lang=ru_RU" type="text/javascript"></script>
+</body>
+</html>
